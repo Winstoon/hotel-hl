@@ -1,0 +1,481 @@
+.home{
+    height: 100vh;
+}
+
+.home .section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    background-color: black;
+}
+
+.home .section.top{
+    align-items: flex-start;
+}
+
+.home .section .background {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.home .section .background .mask {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    background-image: linear-gradient(0deg, rgba(0,0,0,1) 10%, rgba(0,0,0,.4));
+}
+
+.home .section .background > img {
+    width: 100%;
+    height: 90%;
+    object-fit: cover;
+}
+.home .section .background.full > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 5.5s ease-out;
+}
+
+.home .section .background.animate > img {
+    animation: zoomtofit 5.5s ease-out;
+}
+
+.home .content{
+    position: relative;
+    z-index: 3;
+    width: 80%;
+    margin-top: 166px;
+    opacity: .1;
+    transition: transform 1s ease-out 1s, opacity 1s ease-out 1s;
+}
+
+.home .content.animate{
+    opacity: 1;
+    transform: translateY(-40px);
+}
+
+.h1-slideitem,
+.h3-slideitem{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.h1-slideitem > img,
+.h3-slideitem > img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: scale(1);
+}
+
+.h1-slideitem img.active,
+.h3-slideitem img.active{
+    animation: zoomtofit 8.5s ease-out;
+}
+
+.h1-content {
+    position: relative;
+    z-index: 1;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.h1-content .logo{
+    display: block;
+}
+
+.h1-content .title{
+    margin: 20px 0;
+    font-size: 24px;
+}
+
+.h1-content .desc{
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.h1-content .btn-group{
+    margin-top: 34px;
+    display: flex;
+    min-height: 40px;
+}
+.h1-content .btn-group .button{
+    margin-right: 12px;
+}
+.h1-content .btn-group .button:last-child{
+    margin-right: 0;
+}
+
+.h1-pagination{
+    padding: 0 120px;
+    display: flex;
+    height: 164px;
+    border-top: .5px solid rgba(255,255,255,.4);
+    background-image: linear-gradient(0deg, rgba(0,0,0,0.6), rgba(0,0,0,0.2));
+}
+
+.h1-pagination .fade-page-item {
+    position: relative;
+    flex: 1;
+    padding: 25px 0 27px;
+    opacity: .7;
+    transition: opacity 1s, background-color 1s;
+}
+
+.h1-pagination .fade-page-item:hover{
+    cursor: pointer;
+    opacity: 1;
+    background-color: rgba(255, 255, 255, .1);
+}
+
+.h1-pagination .fade-page-item.active{
+    opacity: 1;
+    background-color: rgba(255, 255, 255, .1);
+}
+
+.h1-pagination .fade-page-item.active::after {
+    content: '';
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    height: 1px;
+    width: 0;
+    background-color: white;
+    animation: progress 6.5s linear;
+}
+
+.h1-pagination-item{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.h1-pagination-item .logo{
+    margin-bottom: 8px;
+}
+
+.h1-pagination-item .title {
+    font-size: 14px;
+    margin-top: 4px;
+}
+
+.h2-intros {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.h2-intros > div{
+    width: 16px;
+    font-size: 16px;
+    line-height: 24px;
+    margin-right: 20px;
+}
+
+.h2-intros > div:last-child{
+    margin-right: 0;
+}
+
+.h2-intros > div > span{
+    display: inline-block;
+    margin-bottom: 20px;
+}
+.h2-intros > div > span:last-child{
+    margin-bottom: 0;
+}
+
+.h3-pagination{
+    display: flex;
+    padding: 0 140px;
+}
+
+.h3-pagination-item{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.h3-pagination .fade-page-item {
+    position: relative;
+    flex: 1;
+    padding: 70px 0 0px;
+    opacity: .7;
+    transition: opacity 2s;
+}
+.h3-pagination .fade-page-item:hover {
+    cursor: pointer;
+    opacity: 1;
+}
+
+.h3-pagination .fade-page-item .title{
+    font-size: 20px;
+    margin-bottom: 24px;
+}
+.h3-pagination .fade-page-item .desc{
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.h3-pagination .fade-page-item .title,
+.h3-pagination .fade-page-item .desc {
+    position: relative;
+    top: 0;
+    transition: top 2s ease-out;
+}
+.h3-pagination .fade-page-item.active{
+    opacity: 1;
+}
+.h3-pagination .fade-page-item.active .title,
+.h3-pagination .fade-page-item.active .desc {
+    top: -20px;
+}
+
+.h3-pagination .fade-page-item .v-line {
+    position: relative;
+    height: 40px;
+    width: 1px;
+    opacity: 0;
+    background-color: white;
+    top: 40px;
+    transition: top 4s ease-out, opacity 4s ease-out;
+}
+.h3-pagination .fade-page-item.active .v-line {
+    opacity: 1;
+    top: 0;
+}
+
+.h4-container{
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 170px 0 0;
+    top: 40px;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: top 1s ease-out 1.5s, opacity 1s ease-out 1.5s;
+}
+
+.h4-container.active{
+    top: 0;
+    opacity: 1;
+}
+
+.h4-container .base{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.h4-container .caption{
+    font-size: 24px;
+    margin-bottom: 140px;
+}
+
+.h4-container .bottom{
+    width: 80%;
+    min-width: 940px;
+    margin-top: 48px;
+}
+
+.h4-container .bottom .logos{
+    padding: 56px 0 145px;
+    display: flex;
+    align-items: stretch;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.h4-container .bottom .logos a{
+    color: white;
+    text-decoration: none;
+    font-weight: 300;
+    opacity: .5;
+    transition: opacity .3s ease-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.h4-container .bottom .logos a:hover{
+    opacity: 1;
+    cursor: pointer;
+}
+
+.h4-container .bottom .logos a img{
+    display: block;
+}
+ 
+.h4-container .logos .logo{
+    height: 84px;
+}
+
+.h4-container .bottom .linkmaps {
+    display: flex;
+    align-items: center;
+    padding: 0 26px 26px;
+}
+
+.h4-container .bottom .outlinks{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.h4-container .bottom .outlinks a{
+    opacity: .6;
+    transition: opacity .3s;
+}
+.h4-container .bottom .outlinks a:hover{
+    cursor: pointer;
+    opacity: 1;
+}
+
+.h4-container .bottom .outlinks img{
+    display: block;
+    height: 26px;
+}
+
+.h4-container .bottom .copyright{
+    font-size: 13px;
+    transition: opacity .3s;
+    color: #fff;
+    opacity: .6;
+    text-decoration: none;
+}
+
+.h4-container .bottom .copyright:hover {
+    opacity: 1;
+}
+
+
+
+
+
+.h4-container .goto-top {
+    position: fixed;
+    z-index: 99;
+    right: 45px;
+    bottom: 25px;
+    opacity: 0;
+    display: flex;
+    align-items: flex-start;
+    padding-top: 12px;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    transition: opacity .6s ease-out 2.2s, background-color .3s;
+    pointer-events: none;
+}
+
+.h4-container .goto-top.animate{
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.h4-container .goto-top:hover{
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, .1);
+}
+
+.h4-container .goto-top.light:hover{
+    background-color: rgba(0, 0, 0, .06);
+}
+
+
+.loading-page{
+    position: fixed;
+    z-index: 999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    inset: 0;
+}
+
+.loading-page.hide{
+    opacity: 0;
+    transition: opacity 2s ease-out;
+}
+
+.loading-page.remove{
+    display: none;
+}
+
+.loading-page .loading-icon{
+    position: relative;
+    z-index: 2;
+    width: 120px;
+}
+
+.loading-page .loading-img{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    object-fit: cover;
+    animation: zoomtofit2 3.5s linear;
+}
+
+@keyframes progress {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 100%;
+    }
+}
+
+@keyframes progressh {
+    0% {
+        width: 0;
+    }
+    100% {
+        height: 40px;
+    }
+}
+
+@keyframes zoomtofit {
+    0% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes zoomtofit2 {
+    0% {
+        transform: scale(1.04);
+    }
+    100% {
+        transform: scale(1);
+    }
+}

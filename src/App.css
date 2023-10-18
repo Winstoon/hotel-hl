@@ -1,0 +1,93 @@
+@media screen and (max-height: 1150px) and (min-width: 2300px) {
+    .detail .section2 .swiper-images{
+        gap: 100px;
+    }
+}
+
+@media screen and (max-height: 980px) and (min-width: 2300px) {
+    .detail .section2 .swiper-images{
+        gap: 150px;
+    }
+
+    .detail .section4 .swiper-images2 .images{
+        max-width: calc(100% - 700px)
+    }
+}
+
+@media screen and (max-height: 1150px) and (min-width: 2300px){
+    .detail .section4 .image-wrapper{
+        padding-bottom: 30px!important;
+    }
+    .detail .section4 .image-wrapper .swiper-imagesbar{
+        margin: 20px auto 0
+    }
+    .swiper-images2 .images .img-caption{
+        margin-top: 12px;
+    }
+    .detail .section4 .swiper-images2 .images{
+        max-width: calc(100% - 500px);
+    }
+}
+
+@media screen and (max-height: 980px) and (min-width: 2300px) {
+    .detail .section4 .swiper-images2 .images{
+        max-width: calc(100% - 700px);
+        margin-top: 0;
+    }
+}
+
+@media screen and (max-height: 860px) and (min-width: 2300px) {
+    .detail .section4 .swiper-images2 .images{
+        max-width: calc(100% - 900px);
+    }
+
+    .detail .section4 .content .caption{
+        margin-bottom: 0;
+    }
+}
+
+@media screen and (max-height: 1060px) {
+    .detail .section2 .content .images{
+        padding: 0 60px 30px;
+    }
+
+    .swiper-imagesbar{
+        margin: 30px auto 0;
+    }
+
+    .detail .section2 .content .intros{
+        padding: 120px 0 20px;
+    }
+}
+
+@media screen and (max-height: 900px) {
+    .detail .section4 .content .image-wrapper{
+        padding-bottom: 40px!important;
+    }
+
+    .detail .section2 .content .images{
+        padding: 0 60px 30px;
+    }
+}
+
+@media screen and (max-height: 700px) {
+    .detail .section5 .content{
+        padding-top: 60px;
+    }
+
+    .detail .section2 .content .images .swiper-images{
+        gap: 90px;
+    }
+
+}
+
+@media screen and (max-width: 1500px) {
+    .detail .section5 .content{
+        width: 32%;
+    }
+}
+@media screen and (max-width: 1250px) {
+    .detail .section5 .content{
+        width: 40%;
+    }
+}

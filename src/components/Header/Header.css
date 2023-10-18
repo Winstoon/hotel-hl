@@ -1,0 +1,87 @@
+.header {
+    position: fixed;
+    z-index: 9;
+    top: 0;
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    padding: 36px 130px 49px;
+    user-select: none;
+    transition: opacity 1s ease-out;
+}
+
+.header.lightmode{
+    color: black;
+}
+
+.header.lightmode .button {
+    color: black;
+    border-color: black;
+}
+.header.lightmode .button:hover {
+    background-color: black;
+    color: white;
+}
+
+.header.hidden{
+    opacity: 0;
+}
+
+.header .left,
+.header .right{
+    width: 270px;
+    flex-shrink: 0;
+}
+
+.header .left{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.header .left .more-btn {
+    opacity: 1;
+    padding: 7px 0;
+    transition: opacity .3s ease-out;
+}
+
+.header .left .more-btn.hidden {
+    opacity: 0;
+}
+
+.header .left .more-btn:hover {
+    cursor: pointer;
+    opacity: .5;
+}
+
+.header .center{
+    flex: 1;
+    text-align: center;
+}
+
+.header .center .ico-logo {
+    height: 76px;
+    opacity: 1;
+    transition: opacity .3s ease-out;
+}
+
+.header .center .ico-logo:hover {
+    opacity: .5;
+}
+
+.header .center .ico-logo.small {
+    height: 30px;
+    margin-top: 6px;
+}
+
+.header .right{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-top: 7px;
+}
+
+.header .right .button{
+    margin-left: 32px;
+}
+
