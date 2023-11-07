@@ -26,7 +26,7 @@ function Slide1 ({ ls, data, order }: { ls: ILetterSpacing, data: any, order: nu
                 <Image src={background} />
             </div>
             <div className={`content ${active ? 'animate' : ''}`}>
-                <Image className="logo" src={logo} />
+                { logo ? <Image className="logo" src={logo} /> : null }
                 <div className="caption" style={{ letterSpacing: ls.H1 }}>{caption}</div>
                 {intros.map((intro: string, index: number) =>
                     <div key={index} className="intro" style={{ letterSpacing: ls.TXT }}>{intro}</div>

@@ -4,10 +4,10 @@ import Detail from "./Detail"
 export default function Yukoro () {
     const I18N = useCommonStore(state => state.I18N)
 
-    // todo2: replace data.
     const data = {
         section1: {
-            logo: '/logos/yukoro.svg',
+            // logo: '/logos/yukoro.svg',
+            logo: '',
             caption: I18N['yukoro.title'],
             intros: [I18N['yukoro.desc1'], I18N['yukoro.desc2']],
             orderLink: '/',
@@ -18,11 +18,13 @@ export default function Yukoro () {
             intros: [
                 I18N['detail.yukoro.2.intro1'],
                 I18N['detail.yukoro.2.intro2'],
-                '',
                 I18N['detail.yukoro.2.intro3'],
+                '',
                 I18N['detail.yukoro.2.intro4'],
                 I18N['detail.yukoro.2.intro5'],
-                I18N['detail.yukoro.2.intro6']
+                I18N['detail.yukoro.2.intro6'],
+                I18N['detail.yukoro.2.intro7'],
+                I18N['detail.yukoro.2.intro8']
             ],
             images: [
                 '/detail/yukoro-2-1.jpg',
@@ -45,8 +47,8 @@ export default function Yukoro () {
                 I18N['detail.yukoro.3.intro4'],
                 I18N['detail.yukoro.3.intro5'],
                 I18N['detail.yukoro.3.intro6'],
-                I18N['detail.yukoro.3.intro7'],
-                I18N['detail.yukoro.3.intro8']
+                // I18N['detail.yukoro.3.intro7'],
+                // I18N['detail.yukoro.3.intro8']
             ],
             images: [
                 '/detail/yukoro-3-1.jpg',
@@ -110,7 +112,7 @@ export default function Yukoro () {
                 I18N['detail.yukoro.7.intro2'],
                 I18N['detail.yukoro.7.intro3'],
                 I18N['detail.yukoro.7.intro4'],
-                I18N['detail.yukoro.7.intro5']
+                // I18N['detail.yukoro.7.intro5']
             ],
 
             // same addr with Arcadia

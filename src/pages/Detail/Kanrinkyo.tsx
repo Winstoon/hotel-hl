@@ -7,7 +7,8 @@ export default function Kanrinkyo () {
     // todo2: replace data.
     const data = {
         section1: {
-            logo: '/logos/kanrinkyo.svg',
+            // logo: '/logos/kanrinkyo.svg',
+            logo: '',
             caption: I18N['kanrinkyo.title'],
             intros: [I18N['kanrinkyo.desc1'], I18N['kanrinkyo.desc2']],
             orderLink: '/',
@@ -22,7 +23,8 @@ export default function Kanrinkyo () {
                 I18N['detail.kanrinkyo.2.intro3'],
                 I18N['detail.kanrinkyo.2.intro4'],
                 I18N['detail.kanrinkyo.2.intro5'],
-                I18N['detail.kanrinkyo.2.intro6']
+                I18N['detail.kanrinkyo.2.intro6'],
+                I18N['detail.kanrinkyo.2.intro7']
             ],
             images: [
                 '/detail/kanrinkyo-2-1.jpg',
@@ -44,7 +46,8 @@ export default function Kanrinkyo () {
                 I18N['detail.kanrinkyo.3.intro3'],
                 I18N['detail.kanrinkyo.3.intro4'],
                 I18N['detail.kanrinkyo.3.intro5'],
-                I18N['detail.kanrinkyo.3.intro6']
+                I18N['detail.kanrinkyo.3.intro6'],
+                I18N['detail.kanrinkyo.3.intro7']
             ],
             images: [
                 '/detail/kanrinkyo-3-1.jpg',
@@ -92,16 +95,17 @@ export default function Kanrinkyo () {
                         I18N['detail.kanrinkyo.5.intro2.desc1'],
                         I18N['detail.kanrinkyo.5.intro2.desc2'],
                         I18N['detail.kanrinkyo.5.intro2.desc3'],
-                        I18N['detail.kanrinkyo.5.intro2.desc4']
+                        I18N['detail.kanrinkyo.5.intro2.desc4'],
+                        I18N['detail.kanrinkyo.5.intro2.desc5']
                     ]
                 },
-                {
-                    title: I18N['detail.kanrinkyo.5.intro3.title'],
-                    descs: [
-                        I18N['detail.kanrinkyo.5.intro3.desc1'],
-                        I18N['detail.kanrinkyo.5.intro3.desc2']
-                    ]
-                }
+                // {
+                //     title: I18N['detail.kanrinkyo.5.intro3.title'],
+                //     descs: [
+                //         I18N['detail.kanrinkyo.5.intro3.desc1'],
+                //         I18N['detail.kanrinkyo.5.intro3.desc2']
+                //     ]
+                // }
             ],
             images: [
                 '/detail/kanrinkyo-5-1.jpg',
@@ -123,7 +127,7 @@ export default function Kanrinkyo () {
                 I18N['detail.kanrinkyo.7.intro2'],
                 I18N['detail.kanrinkyo.7.intro3'],
                 I18N['detail.kanrinkyo.7.intro4'],
-                I18N['detail.kanrinkyo.7.intro5']
+                // I18N['detail.kanrinkyo.7.intro5']
             ],
 
             // same addr with Arcadia

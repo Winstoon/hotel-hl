@@ -1,3 +1,4 @@
+import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { useCommonStore, useFadeSlide2Store } from "../../store";
 import Fullpage from "../../components/FullPage/FullPage";
@@ -6,10 +7,9 @@ import FadeSlide from "../../components/FadeSlide/FadeSlide";
 import FadeSlide2 from "../../components/FadeSlide/FadeSlide2";
 import Image from "../../components/Image/Image";
 import Button from "../../components/Button/Button";
+import { ILetterSpacing } from "../../letterSpacings";
 
 import './Home.css'
-import { useEffect, useState } from "react";
-import { ILetterSpacing } from "../../letterSpacings";
 
 function Slide1 ({ order, ls }: { order: number, ls: ILetterSpacing }) {
     const I18N = useCommonStore(state => state.I18N)
@@ -41,43 +41,43 @@ function Slide1 ({ order, ls }: { order: number, ls: ILetterSpacing }) {
                         <div className="desc" style={{ letterSpacing: ls.TXT }}>{I18N['arcadia.desc1']}</div>
                         <div className="desc" style={{ letterSpacing: ls.TXT }}>{I18N['arcadia.desc2']}</div>
                         <div className="btn-group">
-                            <Button to="/arcadia" uppercase>{I18N['detail']}</Button>
+                            <Button to="/arcadia" uppercase>{I18N['explore']}</Button>
                         </div>
                     </div>
                 </div>,
                 <div className="h1-slideitem">
                     <Image src='/jpgs/kanrinkyo.jpg' className={active === 2 ? 'active' : ''} />
                     <div className="h1-content">
-                        <div><Image className="logo" height={126} src="/logos/kanrinkyo.svg" /></div>
+                        <div style={{ opacity: 0 }}><Image className="logo" height={126} src="/logos/kanrinkyo.svg" /></div>
                         <div className="title" style={{ letterSpacing: ls.H1}}>{I18N['kanrinkyo.title']}</div>
                         <div className="desc" style={{ letterSpacing: ls.TXT }}>{I18N['kanrinkyo.desc1']}</div>
                         <div className="desc" style={{ letterSpacing: ls.TXT }}>{I18N['kanrinkyo.desc2']}</div>
                         <div className="btn-group">
-                            <Button to="/kanrinkyo" uppercase>{I18N['detail']}</Button>
+                            <Button to="/kanrinkyo" uppercase>{I18N['explore']}</Button>
                         </div>
                     </div>
                 </div>,
                 <div className="h1-slideitem">
                     <Image src='/jpgs/yukoro.jpg' className={active === 3 ? 'active' : ''} />
                     <div className="h1-content">
-                        <div><Image className="logo" height={126} src="/logos/yukoro.svg" /></div>
+                        <div style={{ opacity: 0 }}><Image className="logo" height={126} src="/logos/yukoro.svg" /></div>
                         <div className="title" style={{ letterSpacing: ls.H1 }}>{I18N['yukoro.title']}</div>
                         <div className="desc" style={{ letterSpacing: ls.TXT }}>{I18N['yukoro.desc1']}</div>
                         <div className="desc" style={{ letterSpacing: ls.TXT }}>{I18N['yukoro.desc2']}</div>
                         <div className="btn-group">
-                            <Button to="/yukoro" uppercase>{I18N['detail']}</Button>
+                            <Button to="/yukoro" uppercase>{I18N['explore']}</Button>
                         </div>
                     </div>
                 </div>,
                 <div className="h1-slideitem">
                     <Image src='/jpgs/newland.jpg' className={active === 4 ? 'active' : ''} />
                     <div className="h1-content">
-                        <div><Image className="logo" height={126} src="/logos/newland.svg" /></div>
+                        <div style={{ opacity: 0 }}><Image className="logo" height={126} src="/logos/newland.svg" /></div>
                         <div className="title" style={{ letterSpacing: ls.H1}}>{I18N['newland.title']}</div>
                         <div className="desc" style={{ letterSpacing: ls.TXT }}>{I18N['newland.desc1']}</div>
                         <div className="desc" style={{ letterSpacing: ls.TXT }}>{I18N['newland.desc2']}</div>
                         <div className="btn-group">
-                            <Button to="/newland" uppercase>{I18N['detail']}</Button>
+                            <Button to="/newland" uppercase>{I18N['explore']}</Button>
                         </div>
                     </div>
                 </div>
@@ -95,17 +95,17 @@ function Slide1 ({ order, ls }: { order: number, ls: ILetterSpacing }) {
                     <div className="title" style={{ letterSpacing: ls.TXT }}>{I18N['arcadia.title.lastname']}</div>
                 </div>,
                 <div className='h1-pagination-item'>
-                    <Image className="logo" src="/logos/kanrinkyo.svg" height={56} />
+                    <Image className="logo" src="/logos/kanrinkyo.svg" height={56} style={{opacity: 0}} />
                     <div className="title" style={{ letterSpacing: ls.TXT }}>{I18N['kanrinkyo.title.firstname']}</div>
                     <div className="title" style={{ letterSpacing: ls.TXT }}>{I18N['kanrinkyo.title.lastname']}</div>
                 </div>,
                 <div className='h1-pagination-item'>
-                    <Image className="logo" src="/logos/yukoro.svg" height={56} />
+                    <Image className="logo" src="/logos/yukoro.svg" height={56} style={{opacity: 0}} />
                     <div className="title" style={{ letterSpacing: ls.TXT }}>{I18N['yukoro.title.firstname']}</div>
                     <div className="title" style={{ letterSpacing: ls.TXT }}>{I18N['yukoro.title.lastname']}</div>
                 </div>,
                 <div className='h1-pagination-item'>
-                    <Image className="logo" src="/logos/newland.svg" height={56} />
+                    <Image className="logo" src="/logos/newland.svg" height={56} style={{opacity: 0}} />
                     <div className="title" style={{ letterSpacing: ls.TXT }}>{I18N['newland.title.firstname']}</div>
                     <div className="title" style={{ letterSpacing: ls.TXT }}>{I18N['newland.title.lastname']}</div>
                 </div>
@@ -125,14 +125,14 @@ function Slide2 ({ order, ls }: { order: number, ls: ILetterSpacing }) {
             </div>
             <div className={`content ${active ? 'animate': ''}`}>
                 <div className="h2-intros" style={{ letterSpacing: ls.TXT }}>
-                    <div>{I18N['home.2.intro10']}</div>
-                    <div>{I18N['home.2.intro9']}</div>
+                    {/* <div>{I18N['home.2.intro10']}</div>
+                    <div>{I18N['home.2.intro9']}</div> */}
                     <div>{I18N['home.2.intro8']}</div>
                     <div>
                         <span>{I18N['home.2.intro7.1']}</span>
                         <span>{I18N['home.2.intro7.2']}</span>
                         <span>{I18N['home.2.intro7.3']}</span>
-                        <span>{I18N['home.2.intro7.4']}</span>
+                        {/* <span>{I18N['home.2.intro7.4']}</span> */}
                     </div>
                     <div>{I18N['home.2.intro6']}</div>
                     <div>{I18N['home.2.intro5']}</div>
@@ -236,9 +236,9 @@ function Slide4 ({ order, ls }: { order: number, ls: ILetterSpacing }) {
                             <a onClick={() =>setDialogVisible(true)}>
                                 <Image src="/icons/wechat.svg" />
                             </a>
-                            <a href="https://www.xiaohongshu.com/user/profile/63656b45000000001f01575f"><Image src="/icons/redbook.svg" /></a>
-                            <a href="https://instagram.com/ishibekojimuan?igshid=MmIzYWVlNDQ5Yg=="><Image src="/icons/muan.svg" /></a>
-                            <a href="https://instagram.com/arcadiaryowhajapan?igshid=NTc4MTIwNjQ2YQ=="><Image src="/icons/arcadia.svg" /></a>
+                            <a target="_blank" href="https://www.xiaohongshu.com/user/profile/63656b45000000001f01575f"><Image src="/icons/redbook.svg" /></a>
+                            <a target="_blank" href="https://instagram.com/ishibekojimuan?igshid=MmIzYWVlNDQ5Yg=="><Image src="/icons/muan.svg" /></a>
+                            <a target="_blank" href="https://instagram.com/arcadiaryowhajapan?igshid=NTc4MTIwNjQ2YQ=="><Image src="/icons/arcadia.svg" /></a>
                         </div>
                         <Link to='/' className="copyright" style={{ letterSpacing: 1 }}>Copyright © 2023 Ryowha group</Link>
                     </div>

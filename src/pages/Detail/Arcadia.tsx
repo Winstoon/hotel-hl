@@ -45,7 +45,7 @@ export default function Arcadia () {
                 I18N['detail.arcadia.3.intro4'],
                 I18N['detail.arcadia.3.intro5'],
                 I18N['detail.arcadia.3.intro6'],
-                I18N['detail.arcadia.3.intro7']
+                // I18N['detail.arcadia.3.intro7']
             ],
             images: [
                 '/detail/arcadia-3-1.jpg',
@@ -92,16 +92,17 @@ export default function Arcadia () {
                     descs: [
                         I18N['detail.arcadia.5.intro2.desc1'],
                         I18N['detail.arcadia.5.intro2.desc2'],
-                        I18N['detail.arcadia.5.intro2.desc3']
+                        I18N['detail.arcadia.5.intro2.desc3'],
+                        I18N['detail.arcadia.5.intro2.desc4']
                     ]
                 },
-                {
-                    title: I18N['detail.arcadia.5.intro3.title'],
-                    descs: [
-                        I18N['detail.arcadia.5.intro3.desc1'],
-                        I18N['detail.arcadia.5.intro3.desc2']
-                    ]
-                }
+                // {
+                //     title: I18N['detail.arcadia.5.intro3.title'],
+                //     descs: [
+                //         I18N['detail.arcadia.5.intro3.desc1'],
+                //         I18N['detail.arcadia.5.intro3.desc2']
+                //     ]
+                // }
             ],
             images: [
                 '/detail/arcadia-5-1.jpg',
@@ -136,8 +137,7 @@ export default function Arcadia () {
                 I18N['detail.arcadia.7.intro1'],
                 I18N['detail.arcadia.7.intro2'],
                 I18N['detail.arcadia.7.intro3'],
-                I18N['detail.arcadia.7.intro4'],
-                I18N['detail.arcadia.7.intro5']
+                I18N['detail.arcadia.7.intro4']
             ],
             mapImage: '/detail/arcadia-map.png',
             mapAddr: I18N['detail.arcadia.7.mapaddr'],

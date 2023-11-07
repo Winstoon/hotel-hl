@@ -287,8 +287,12 @@
 .detail .section5 .content .intro{
     font-size: 14px;
     line-height: 24px;
-    margin-bottom: 36px;
+    margin-bottom: 56px;
     white-space: nowrap;
+}
+
+.detail .section5 .content .intro:last-child{
+    margin-bottom: 0;
 }
 .detail .section5 .content .intro-tit{
     margin-bottom: 6px;

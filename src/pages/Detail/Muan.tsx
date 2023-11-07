@@ -121,15 +121,16 @@ export default function Muan () {
         section7: {
             contact: {
                 address: I18N['detail.muan.7.address'],
-                phonenumber: '+81 136 55 8917',
-                email: 'info@ryowhagroup.com'
+                phonenumber: '+81 075 741 8815',
+                email: 'info@ishibekojimuan.com'
             },
             intros: [
                 I18N['detail.muan.7.intro1'],
                 I18N['detail.muan.7.intro2'],
                 I18N['detail.muan.7.intro3'],
                 I18N['detail.muan.7.intro4'],
-                I18N['detail.muan.7.intro5']
+                I18N['detail.muan.7.intro5'],
+                I18N['detail.muan.7.intro6']
             ],
             mapImage: '/detail/muan-map.png',
             mapAddr: I18N['detail.muan.7.mapaddr'],
