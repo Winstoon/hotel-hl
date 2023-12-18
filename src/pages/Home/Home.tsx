@@ -228,8 +228,7 @@ function Slide4 ({ order, ls }: { order: number, ls: ILetterSpacing }) {
                         <Link to='/arcadia'><Image className="logo" src="/logos/arcadia.svg" /></Link>
                         <Link to='/kanrinkyo'><Image className="logo" src="/logos/kanrinkyo.svg" /></Link>
                         <Link to='/yukoro'><Image className="logo" src="/logos/yukoro.svg" /></Link>
-                        {/* <Link to='/newland'><Image className="logo" src="/logos/newland.svg" /></Link> */}
-                        <Link to='/newland' style={{ letterSpacing: ls.TXT }}>Coming Soon</Link>
+                        <Link to='/newland'><Image className="logo" src="/logos/newland.svg" /></Link>
                     </div>
                     <div className="linkmaps" style={{ letterSpacing: ls.TXT }}>
                         <div className="outlinks">

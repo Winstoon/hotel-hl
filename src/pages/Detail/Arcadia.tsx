@@ -109,7 +109,8 @@ export default function Arcadia () {
                 '/detail/arcadia-5-2.jpg',
                 '/detail/arcadia-5-3.jpg',
                 '/detail/arcadia-5-4.jpg',
-                '/detail/arcadia-5-5.jpg'
+                '/detail/arcadia-5-5.jpg',
+                '/detail/arcadia-5-6.jpg',
             ]
         },
         section6 : {  // 仅 Arcadia 有

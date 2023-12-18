@@ -8,5 +8,6 @@ interface IProps {
 }
 
 export default function Image (props: IProps) {
-    return <img {...props} alt="img" draggable='false' />
+    const { style, ...others } = props
+    return <img {...others} alt="img" draggable='false' style={{ ...style, display: 'block' }} />
 }

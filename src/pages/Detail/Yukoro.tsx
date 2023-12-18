@@ -53,7 +53,8 @@ export default function Yukoro () {
             images: [
                 '/detail/yukoro-3-1.jpg',
                 '/detail/yukoro-3-2.jpg',
-                '/detail/yukoro-3-3.jpg'
+                '/detail/yukoro-3-3.jpg',
+                '/detail/yukoro-3-4.jpg'
             ]
         },
         section4: {

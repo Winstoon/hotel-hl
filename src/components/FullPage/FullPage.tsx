@@ -45,6 +45,7 @@ interface IProps {
 export default function Fullpage (props: IProps) {
     const { speed = 2000, sliders, ignoreHideIndex } = props
     const [active, setActive] = useState({ prev: -1, end: 0 })
+    const setSwiper = useCommonStore(state => state.setSwiper)
     const setPageSectionOrder = useCommonStore(state => state.setPageSectionOrder)
 
     useEffect(() => {
@@ -57,17 +58,22 @@ export default function Fullpage (props: IProps) {
             slidesPerView: 'auto',
             direction: 'vertical'
         });
-        
-        swiper.on('slideChangeTransitionStart', (a: any) => {
+
+        swiper.on('slideChange', (a: any) => {
             setPageSectionOrder(a.activeIndex)
             setActive(atv => ({ ...atv, prev: a.previousIndex}))
+
+            setTimeout(() => {
+                setActive(atv => ({ ...atv, end: a.activeIndex }))
+            }, speed);
         })
-        swiper.on('slideChangeTransitionEnd', (a: any) => {
-            setActive(atv => ({ ...atv, end: a.activeIndex }))
-        })
+
+        setSwiper(swiper)
+
 
         return () => {
             swiper.destroy()
+            setSwiper(undefined)
         }
         // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [speed])

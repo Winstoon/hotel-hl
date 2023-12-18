@@ -46,6 +46,7 @@ export default function MoreDialog (props: IProps) {
                 <div className={`langs ${visible ? 'active': ''}`}>
                     { Object.entries(I18N_LABELS).map(([key, label]) =>
                         <div
+                            key={key}
                             className={`lang-item ${key === lang ? 'active' : ''}`}
                             style={{ letterSpacing: ls.TXT }}
                             onClick={() => setLang(key as I18N)}

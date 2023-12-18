@@ -15,12 +15,14 @@ type CommonState = {
     letterSpacing: ILetterSpacing
     pageSectionOrder: number
     wechatDialogVisible: boolean
+    swiper: any
 }
 
 type CommonActions = {
     setLang: (lang: I18N) => void
     setPageSectionOrder: (order: number) => void
     setWeChatDialogVisible: (visible: boolean) => void
+    setSwiper: (swiper: any) => void
 }
 
 const getDefaultI18NData = () => {
@@ -33,11 +35,13 @@ const getDefaultI18NData = () => {
 }
 
 export const useCommonStore = create(immer<CommonState & CommonActions>((set, get) => ({
+    swiper: undefined,
     lang: I18N.ZH,
     I18N: getDefaultI18NData(),
     letterSpacing: LetterSpacingMap,
     pageSectionOrder: 0,
     wechatDialogVisible: false,
+    setSwiper: swiper => set({ swiper }),
     setLang: lang => {
         let lsmap = lang === I18N.EN ? ENLetterSpacingMap : LetterSpacingMap
         let result: I18NData = {}
@@ -50,7 +54,6 @@ export const useCommonStore = create(immer<CommonState & CommonActions>((set, ge
     setPageSectionOrder: order => set({ pageSectionOrder: order }),
     setWeChatDialogVisible: visible => set({ wechatDialogVisible: visible })
 })))
-
 
 
 type FadeSlideProps = {
