@@ -157,6 +157,7 @@ function Slide3 ({ order, ls }: { order: number, ls: ILetterSpacing }) {
         if (order === 2) {
             setActive(0)
         }
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [order])
 
     return (
@@ -202,7 +203,7 @@ function Slide3 ({ order, ls }: { order: number, ls: ILetterSpacing }) {
 }
 
 function Slide4 ({ order, ls }: { order: number, ls: ILetterSpacing }) {
-    const [I18N, setDialogVisible] = useCommonStore(state => [state.I18N, state.setWeChatDialogVisible])
+    const setDialogVisible = useCommonStore(state => state.setWeChatDialogVisible)
     const setPageSectionOrder = useCommonStore(state => state.setPageSectionOrder)
     const active = order === 3
 
@@ -232,12 +233,12 @@ function Slide4 ({ order, ls }: { order: number, ls: ILetterSpacing }) {
                     </div>
                     <div className="linkmaps" style={{ letterSpacing: ls.TXT }}>
                         <div className="outlinks">
-                            <a onClick={() =>setDialogVisible(true)}>
+                            <div onClick={() =>setDialogVisible(true)}>
                                 <Image src="/icons/wechat.svg" />
-                            </a>
-                            <a target="_blank" href="https://www.xiaohongshu.com/user/profile/63656b45000000001f01575f"><Image src="/icons/redbook.svg" /></a>
-                            <a target="_blank" href="https://instagram.com/ishibekojimuan?igshid=MmIzYWVlNDQ5Yg=="><Image src="/icons/muan.svg" /></a>
-                            <a target="_blank" href="https://instagram.com/arcadiaryowhajapan?igshid=NTc4MTIwNjQ2YQ=="><Image src="/icons/arcadia.svg" /></a>
+                            </div>
+                            <a target="_blank" rel="noreferrer" href="https://www.xiaohongshu.com/user/profile/63656b45000000001f01575f"><Image src="/icons/redbook.svg" /></a>
+                            <a target="_blank" rel="noreferrer" href="https://instagram.com/ishibekojimuan?igshid=MmIzYWVlNDQ5Yg=="><Image src="/icons/muan.svg" /></a>
+                            <a target="_blank" rel="noreferrer" href="https://instagram.com/arcadiaryowhajapan?igshid=NTc4MTIwNjQ2YQ=="><Image src="/icons/arcadia.svg" /></a>
                         </div>
                         <Link to='/' className="copyright" style={{ letterSpacing: 1 }}>Copyright © 2023 Ryowha group</Link>
                     </div>

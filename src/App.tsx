@@ -1,3 +1,4 @@
+import { useEffect, useState } from 'react';
 import { Routes, Route, useLocation } from 'react-router-dom'
 import { useCommonStore } from './store';
 import { I18N } from './i18n';
@@ -11,9 +12,18 @@ import Yukoro from './pages/Detail/Yukoro';
 import NewLand from './pages/Detail/NewLand';
 import WeChatDialog from './components/WeChatDialog/WeChatDialog';
 
-import './App.css';
+import MobileHome from './_mobilePages/Home';
+import MobileMuan from './_mobilePages/Detail/Muan';
+import MobileArcadia from './_mobilePages/Detail/Arcadia';
+import MobileKanrinkyo from './_mobilePages/Detail/Kanrinkyo';
+import MobileYukoro from './_mobilePages/Detail/Yukoro';
+import MobileNewLand from './_mobilePages/Detail/NewLand';
+import MobileContact from './_mobilePages/Contact';
+import MobileWeChatDialog from './_mobileComponents/WeChatDialog';
+
 import PageNavgation from './components/PageNavgation';
-import { useEffect } from 'react';
+
+import './App.css';
 
 const FontFamilies = {
     [I18N.EN]: 'EBGaramond',
@@ -36,6 +46,7 @@ function App() {
     const fontFamily = FontFamilies[lang]
     const isMobile = mobileCheck()
     const location = useLocation()
+    const [loading, setLoading] = useState(true)
 
     useEffect(() => {
         if (isMobile && !location.pathname.startsWith('/mobile')) {
@@ -45,33 +56,38 @@ function App() {
         }
     }, [isMobile, location.pathname])
 
-    console.log(location.pathname, pcPageOrder)
+    useEffect(() => {
+        setTimeout(() => {
+            setLoading(false)
+        }, 0);
+    }, [])
 
     return (
         <div style={{ fontFamily: `EBGaramond, ${fontFamily}` }}>
-            <Routes>
-                <Route path="/" element={<Home />} />
-                
-                {/* details */}
-                <Route path="/muan" element={<Muan />} />
-                <Route path="/arcadia" element={<Arcadia />} />
-                <Route path="/kanrinkyo" element={<Kanrinkyo />} />
-                <Route path="/yukoro" element={<Yukoro />} />
-                <Route path="/newland" element={<NewLand />} />
-                
-                <Route path="/contact" element={<Contact />} />
+            { loading ? null :
+                <Routes>
+                    <Route path="/" element={<Home />} />
+                    
+                    {/* details */}
+                    <Route path="/muan" element={<Muan />} />
+                    <Route path="/arcadia" element={<Arcadia />} />
+                    <Route path="/kanrinkyo" element={<Kanrinkyo />} />
+                    <Route path="/yukoro" element={<Yukoro />} />
+                    <Route path="/newland" element={<NewLand />} />
+                    
+                    <Route path="/contact" element={<Contact />} />
 
 
-                
-                {/* mobiles */}
-                <Route path="/mobile" element={<Home />} />
-                <Route path="/mobile/muan" element={<Muan />} />
-                <Route path="/mobile/arcadia" element={<Arcadia />} />
-                <Route path="/mobile/kanrinkyo" element={<Kanrinkyo />} />
-                <Route path="/mobile/yukoro" element={<Yukoro />} />
-                <Route path="/mobile/newland" element={<NewLand />} />
-                <Route path="/mobile/contact" element={<Contact />} />
-            </Routes>
+                    {/* mobiles */}
+                    <Route path="/mobile" element={<MobileHome />} />
+                    <Route path="/mobile/muan" element={<MobileMuan />} />
+                    <Route path="/mobile/arcadia" element={<MobileArcadia />} />
+                    <Route path="/mobile/kanrinkyo" element={<MobileKanrinkyo />} />
+                    <Route path="/mobile/yukoro" element={<MobileYukoro />} />
+                    <Route path="/mobile/newland" element={<MobileNewLand />} />
+                    <Route path="/mobile/contact" element={<MobileContact />} />
+                </Routes>
+            }
             <WeChatDialog />
 
             { isMobile ? null :
@@ -86,6 +102,8 @@ function App() {
                     (location.pathname.startsWith('/yukoro') && pcPageOrder === 3)
                 } />
             }
+
+            <MobileWeChatDialog />
         </div>
     )
 }

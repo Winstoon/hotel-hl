@@ -1,0 +1,131 @@
+
+.mobile-loading-page{
+    position: fixed;
+    z-index: 999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    inset: 0;
+}
+
+.mobile-loading-page.hide{
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 1s ease-in;
+}
+
+.mobile-loading-page.remove{
+    display: none;
+}
+
+.mobile-loading-page .logo{
+    position: relative;
+    width: 108px;
+    z-index: 2;
+}
+
+.mobile-home .section1 .h1-content .title{
+    font-size: 22px;
+    margin: 0 0 23px;
+}
+
+.mobile-home .section2 .content {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.mobile-home .section2 .content>div {
+    width: 18px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.mobile-home .section3 .content {
+    align-self: flex-start;
+    margin-left: 36px;
+    position: relative;
+    z-index: 1;
+}
+.mobile-home .section3 .content .title{
+    font-size: 20px;
+    margin-bottom: 16px;
+}
+.mobile-home .section3 .content .desc{
+    font-size: 13px;
+    line-height: 24px;
+}
+.mobile-home .section3 .mobile-fade-pagination{
+    justify-content: flex-start;
+    padding-left: 36px;
+    width: 100%;
+}
+.mobile-home .section3 .fade-page-item{
+    flex: 1;
+}
+.mobile-home .section3 .h3-pis{
+    position: relative;
+    width: auto;
+    padding-bottom: 30px;
+    font-size: 13px;
+    line-height: 20px;
+}
+.mobile-home .section3 .h3-pis::after{
+    content: '';
+    position: absolute;
+    width: .5px;
+    height: 60px;
+    bottom: -42px;
+    left: 5px;
+    background-color: #fff;
+}
+.mobile-home .section3 .h3-pis .pi{
+    opacity: .7;
+    transition: opacity .3s ease-out;
+}
+.mobile-home .section3 .h3-pis .pi.active{
+    opacity: 1;
+}
+
+.mobile-container.mobile-home .section4 {
+    height: 588px;
+    margin-bottom: -140px;
+    align-items: flex-start;
+}
+.mobile-home .section4 .content{
+    display: flex;
+    flex-direction: column;
+    padding-top: 52px;
+}
+.mobile-home .section4 .content .jt-logo{
+    padding-bottom: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid rgba(255, 255, 255, .1);
+}
+.mobile-home .section4 .content .jt-logo img{
+    width: 85px;
+}
+
+.mobile-home .section4 .content .others{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    width: 270px;
+    padding-top: 42px;
+}
+.mobile-home .section4 .content .others img{
+    height: 64px;
+    flex: 1;
+    object-fit: contain;
+}
+
+
+.mobile-home .mobile-footer{
+    background-color: transparent;
+    position: relative;
+    z-index: 1;
+}

@@ -37,6 +37,11 @@ export const I18NS: I18NFullData = {
         [I18N.EN]: 'Reserve',
         [I18N.JP]: '予約',
     },
+    'reservebtn': {
+        [I18N.ZH]: '预订',
+        [I18N.EN]: 'Reserve',
+        [I18N.JP]: '予約',
+    },
     'detail': {
         [I18N.ZH]: '前往',
         [I18N.EN]: 'Detail',

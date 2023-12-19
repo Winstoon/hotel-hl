@@ -1,3 +1,19 @@
+.mobile-container {
+    background-color: #212020;
+}
+
+.mobile-container .section{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mobile-container .section>*:not(.mobile-bgimg):not(.mobile-fade-slide) {
+    position: relative;
+    z-index: 2;
+}
+
 @media screen and (max-height: 1150px) and (min-width: 2300px) {
     .detail .section2 .swiper-images{
         gap: 100px;

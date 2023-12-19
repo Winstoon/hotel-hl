@@ -347,10 +347,12 @@
     gap: 24px;
 }
 
+.h4-container .bottom .outlinks div,
 .h4-container .bottom .outlinks a{
     opacity: .6;
     transition: opacity .3s;
 }
+.h4-container .bottom .outlinks div:hover,
 .h4-container .bottom .outlinks a:hover{
     cursor: pointer;
     opacity: 1;
