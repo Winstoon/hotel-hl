@@ -70,7 +70,7 @@
 .mobile-footer .quick-links{
     display: flex;
     align-items: center;
-    gap: 48px;
+    gap: 24px;
     margin-bottom: 20px;
 }
 .mobile-footer .copyright{
