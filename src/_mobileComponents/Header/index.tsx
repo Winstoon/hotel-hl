@@ -38,7 +38,7 @@ export default function Header (props: IProps) {
     }
 
     const sameRouterPath = (rp: string, cp: string) => {
-        const _rp = '/mobile' + (rp.endsWith('/') ? rp : rp + '/')
+        const _rp = rp.endsWith('/') ? rp : rp + '/'
         const _cp = cp.endsWith('/') ? cp : cp + '/'
         return _rp === _cp
     }

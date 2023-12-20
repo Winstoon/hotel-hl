@@ -14,7 +14,7 @@ interface IProps {
 }
 
 let interval: any = null
-export default function FadeSlide (props: IProps) {
+export default function FadeSlide2 (props: IProps) {
     const { autoplay, waiting, trigger = 'click', length, paginationClassName, render, renderPaginations } = props
     const [active, setActive, setActiveFn] = useFadeSlide2Store(state => [state.active, state.setActive, state.setActiveFn])
 
