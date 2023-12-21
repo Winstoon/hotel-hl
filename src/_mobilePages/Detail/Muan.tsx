@@ -28,13 +28,17 @@ function Section2 ({ls, data}: {ls: ILetterSpacing, data: any}) {
     return (
         <div className="section2">
             <div className="intros">
-                {intros.map((intro: string) => 
-                    <div className="intro" style={{ letterSpacing: ls.TXT }}>{intro}</div>
+                {intros.map((intro: string, idx: number) => 
+                    <div
+                        key={idx}
+                        className="intro"
+                        style={{ letterSpacing: ls.TXT }}
+                    >{intro}</div>
                 )}
             </div>
             <div className="vscroll-imgs">
                 { images.map((src: string) =>
-                    <Image src={src} />
+                    <Image key={src} src={src} />
                 )}
             </div>
         </div>
@@ -49,8 +53,12 @@ function Section3 ({ls, data}: {ls: ILetterSpacing, data: any}) {
             <div className="content">
                 <div className="caption" style={{ letterSpacing: ls.H1 }}>{caption}</div>
                 <div className="intros">
-                    {intros.map((intro: string) =>
-                        <div className="intro" style={{ letterSpacing: ls.TXT }}>{intro}</div>
+                    {intros.map((intro: string, idx: number) =>
+                        <div
+                            key={idx}
+                            className="intro"
+                            style={{ letterSpacing: ls.TXT }}
+                        >{intro}</div>
                     )}
                 </div>
             </div>
@@ -80,8 +88,8 @@ function Section4 ({ls, data}: {ls: ILetterSpacing, data: any}) {
         <div className="section4">
             <div className="caption" style={{ letterSpacing: ls.H1 }}>{caption}</div>
             <div className="vscroll-cards">
-                { images.map((img: any) =>
-                    <div className="card">
+                { images.map((img: any, idx: number) =>
+                    <div key={idx} className="card">
                         <Image src={img.src} />
                         <div className="cpt" style={{ letterSpacing: ls.TXT }}>{img.caption}</div>
                         <div className="desc" style={{ letterSpacing: ls.TXT }}>{img.desc}</div>
@@ -99,18 +107,18 @@ function Section5 ({ls, data}: {ls: ILetterSpacing, data: any}) {
         <div className="section5">
             <div className="caption" style={{ letterSpacing: ls.H1 }}>{caption}</div>
             <div className="intros">
-                {intros.map((intro: any) => 
-                    <Fragment>
+                {intros.map((intro: any, idx: number) => 
+                    <Fragment key={idx}>
                         <div className="title" style={{ letterSpacing: ls.TXT }}>{intro.title}</div>
-                        { intro.descs.map((desc: string) =>
-                            <div className="intro" style={{ letterSpacing: ls.TXT }}>{desc}</div>
+                        { intro.descs.map((desc: string, sidx: number) =>
+                            <div key={sidx} className="intro" style={{ letterSpacing: ls.TXT }}>{desc}</div>
                         )}
                     </Fragment>
                 )}
             </div>
             <div className="vscroll-imgs">
-                { images.map((src: string) =>
-                    <Image src={src} />
+                { images.map((src: string, idx: number) =>
+                    <Image key={idx} src={src} />
                 )}
             </div>
         </div>
@@ -123,8 +131,12 @@ function Section7 ({ls, data}: {ls: ILetterSpacing, data: any}) {
     return (
         <div className="section7">
             <div className="intros">
-                { intros.map((intro: string) =>
-                    <div className="intro" style={{ letterSpacing: ls.TXT }}>{intro}</div>
+                { intros.map((intro: string, idx: number) =>
+                    <div
+                        key={idx}
+                        className="intro"
+                        style={{ letterSpacing: ls.TXT }}
+                    >{intro}</div>
                 )}
             </div>
             <div className="contact">
