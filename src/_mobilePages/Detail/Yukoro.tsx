@@ -89,7 +89,7 @@ function Section4 ({ls, data}: {ls: ILetterSpacing, data: any}) {
             <div className="caption" style={{ letterSpacing: ls.H1 }}>{caption}</div>
             <div className="intros">
                 {intros.map((intro: string) =>
-                    <div className="intro">{intro}</div>
+                    <div className="intro" style={{ letterSpacing: ls.TXT }}>{intro}</div>
                 )}
             </div>
             <div className="cards">
@@ -287,7 +287,7 @@ export default function MobileYukoro () {
             <Section4 ls={ls} data={data.section4} />
             <Section5 ls={ls} data={data.section5} />
             <Section7 ls={ls} data={data.section7} />
-            <Footer />
+            <Footer background="#171616" />
         </div>
     )
 }
