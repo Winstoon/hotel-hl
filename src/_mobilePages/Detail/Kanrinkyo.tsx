@@ -297,7 +297,7 @@ export default function MobileKanrinkyo () {
             <Section4 ls={ls} data={data.section4} />
             <Section5 ls={ls} data={data.section5} />
             <Section7 ls={ls} data={data.section7} />
-            <Footer background='#171616' />
+            <Footer background='#171616' coming />
         </div>
     )
 }

@@ -10,8 +10,7 @@ export default function Yukoro () {
             logo: '',
             caption: I18N['yukoro.title'],
             intros: [I18N['yukoro.desc1'], I18N['yukoro.desc2']],
-            orderLink: '/',
-            gotoLink: '/',
+            coming: true,
             background: '/detail/yukoro-1.jpg'
         },
         section2: {

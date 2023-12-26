@@ -72,6 +72,21 @@ export default function Arcadia () {
                     src: '/detail/arcadia-4-3.jpg',
                     caption: I18N['detail.arcadia.4.img3.caption'],
                     desc: I18N['detail.arcadia.4.img3.desc']
+                },
+                {
+                    src: '/detail/arcadia-4-3.jpg',
+                    caption: I18N['detail.arcadia.4.img3.caption'],
+                    desc: I18N['detail.arcadia.4.img3.desc']
+                },
+                {
+                    src: '/detail/arcadia-4-4.jpg',
+                    caption: I18N['detail.arcadia.4.img4.caption'],
+                    desc: I18N['detail.arcadia.4.img4.desc']
+                },
+                {
+                    src: '/detail/arcadia-4-5.jpg',
+                    caption: I18N['detail.arcadia.4.img5.caption'],
+                    desc: I18N['detail.arcadia.4.img5.desc']
                 }
             ]
         },
@@ -131,8 +146,8 @@ export default function Arcadia () {
         section7: {
             contact: {
                 address: I18N['detail.arcadia.7.address'],
-                phonenumber: '+81 136 55 8917',
-                email: 'info@ryowhagroup.com'
+                phonenumber: '+81 0136 55 7559',
+                email: 'info.arcadia@ryowhagroup.com'
             },
             intros: [
                 I18N['detail.arcadia.7.intro1'],
@@ -154,5 +169,5 @@ export default function Arcadia () {
         // }
     }
 
-    return <Detail data={data} />
+    return <Detail className='arcadia' data={data} />
 }

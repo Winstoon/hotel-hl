@@ -5,14 +5,14 @@ import Image from '../Image'
 
 import './index.css'
 
-export default function Footer({ background }: { background?: string }) {
+export default function Footer({ background, coming }: { coming?: boolean, background?: string }) {
     const location = useLocation()
     const I18N = useCommonStore(state => state.I18N)
     const setWeChatDialogVisible = useCommonStore(state => state.setWeChatDialogVisible)
     const isHome = location.pathname === '/mobile/' || location.pathname === '/mobile'
 
     return (
-        <div className='mobile-footer' style={{ paddingBottom: isHome ? 28 : 76, background }}>
+        <div className='mobile-footer' style={{ paddingBottom: isHome ? 28 : 100, background }}>
             <div className='quick-links'>
                 <Image src="/icons/wechat.svg" onClick={() => setWeChatDialogVisible(true)} />
                 <a rel="noreferrer" target="_blank" href="https://www.xiaohongshu.com/user/profile/63656b45000000001f01575f">
@@ -30,8 +30,8 @@ export default function Footer({ background }: { background?: string }) {
             </div>
             { isHome ? null :
                 <div className='footer-btn-group'>
-                    <Button3 to='#'>
-                        {I18N['reservebtn']}
+                    <Button3 to='#' disabled={coming}>
+                        {coming ? I18N['comingbtn'] : I18N['reservebtn']}
                         <Image src="/icons/right-arrow.svg" />
                     </Button3>
                 </div>

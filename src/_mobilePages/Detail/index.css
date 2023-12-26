@@ -268,14 +268,14 @@
 .mobile-detail.yukoro .section4 .intro{
     min-height: 24px;
 }
-.mobile-detail.yukoro .section4 .cards{
+/* .mobile-detail.yukoro .section4 .cards{
     display: flex;
     flex-direction: column;
     gap: 20px;
-}
-.mobile-detail.yukoro .section4 .card{
+} */
+/* .mobile-detail.yukoro .section4 .card{
     width: 100%;
-}
-.mobile-detail.yukoro .section4 .card img{
+} */
+/* .mobile-detail.yukoro .section4 .card img{
     width: 100%;
-}
+} */

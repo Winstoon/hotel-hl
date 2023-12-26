@@ -18,7 +18,7 @@ import './Detail.css'
 function Slide1 ({ ls, data, order }: { ls: ILetterSpacing, data: any, order: number }) {
     const active = order === 0
     const I18N = useCommonStore(state => state.I18N)
-    const { logo, caption, intros, gotoLink, orderLink, background } = data
+    const { logo, caption, intros, gotoLink, orderLink, coming, background } = data
 
     return (
         <div className="section section1">
@@ -34,6 +34,7 @@ function Slide1 ({ ls, data, order }: { ls: ILetterSpacing, data: any, order: nu
                 <div className="btns">
                     { gotoLink ? <Button href={gotoLink}>{I18N['detail']}</Button> : null }
                     { orderLink ? <Button href={orderLink}>{I18N['reserve']}</Button> : null }
+                    { coming ? <Button disabled>{I18N['comingbtn']}</Button> : null}
                 </div>
             </div>
             <div className="progress">
@@ -236,7 +237,7 @@ function Slide7 ({ ls, data, order }: { ls: ILetterSpacing, data: any, order: nu
 function Slide8 ({ ls, data, order }: { ls: ILetterSpacing, data: any, order: number }) {
     const active = order === 7
     const I18N = useCommonStore(state => state.I18N)
-    const { caption, intros, gotoLink, orderLink } = data
+    const { caption, intros, gotoLink, orderLink, coming } = data
 
     return (
         <div className="section section8">
@@ -248,6 +249,7 @@ function Slide8 ({ ls, data, order }: { ls: ILetterSpacing, data: any, order: nu
                 <div className="btns">
                     { gotoLink ? <Button href={gotoLink}>{I18N['detail']}</Button> : null }
                     { orderLink ? <Button href={orderLink}>{I18N['reserve']}</Button> : null }
+                    { coming ? <Button disabled>{I18N['comingbtn']}</Button> : null }
                 </div>
             </div>
             <Footer />
@@ -255,8 +257,8 @@ function Slide8 ({ ls, data, order }: { ls: ILetterSpacing, data: any, order: nu
     )
 }
 
-export default function Detail (props: { data: any }) {
-    const { data } = props
+export default function Detail (props: { className?: string, data: any }) {
+    const { data, className } = props
     const letterSpacing = useCommonStore(state => state.letterSpacing)
     const [pageSectionOrder, setPageSectionOrder] = useCommonStore(state => [state.pageSectionOrder, state.setPageSectionOrder])
 
@@ -278,7 +280,7 @@ export default function Detail (props: { data: any }) {
     }, [])
 
     return (
-        <div className="detail">
+        <div className={`detail ${className || ''}`}>
             <Header {...headerConfig} />
             <Fullpage
                 ignoreHideIndex={data.section6 ? [6,7] : [5,6]}

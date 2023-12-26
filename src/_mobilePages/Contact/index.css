@@ -14,7 +14,7 @@
 }
 
 .mobile-contact .content{
-    padding: 360px 24px 0;
+    padding: 320px 24px 0;
 }
 
 .mobile-contact .content .caption{
@@ -37,7 +37,7 @@
 .mobile-contact .quicklinks{
     display: flex;
     padding: 0 24px;
-    margin-top: 36px;
+    margin-top: 56px;
     gap: 24px;
 }
 .mobile-contact .quicklinks img{

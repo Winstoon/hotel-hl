@@ -14,7 +14,7 @@ const ROUTERS = [
 
     { label: 'YUKORO', path: '/mobile/yukoro' },
     { label: 'NEW LAND', path: '/mobile/newland' },
-    { label: 'Contact Us', path: '/mobile/contact' }
+    { label: 'CONTACT US', path: '/mobile/contact' }
 ]
 
 interface IProps{

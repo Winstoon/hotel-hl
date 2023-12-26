@@ -26,36 +26,14 @@
     width: 100%;
 }
 
-.swiper-images .swiper-item:nth-child(1){
-    width: 22.4%;
-}
-
-.swiper-images .swiper-item:nth-child(2){
-    width: 31%;
-}
-
-.swiper-images .swiper-item:nth-child(3){
-    width: 21.4%
-}
-
-.swiper-images .swiper-item:nth-child(4){
-    width: 19%;
-}
-
-.swiper-images .swiper-item:nth-child(5){
-    width: 31%;
-}
-
-.swiper-images .swiper-item:nth-child(6){
-    width: 16%;
-}
-
-.swiper-images .swiper-item:nth-child(7){
-    width: 21.4%;
-}
-.swiper-images .swiper-item:nth-child(8){
-    width: 26%;
-}
+.swiper-images .swiper-item:nth-child(1){ width: 22.4%; }
+.swiper-images .swiper-item:nth-child(2){ width: 31%; }
+.swiper-images .swiper-item:nth-child(3){ width: 21.4% }
+.swiper-images .swiper-item:nth-child(4){ width: 19%; }
+.swiper-images .swiper-item:nth-child(5){ width: 31%; }
+.swiper-images .swiper-item:nth-child(6){ width: 16%; }
+.swiper-images .swiper-item:nth-child(7){ width: 21.4%; }
+.swiper-images .swiper-item:nth-child(8){ width: 26%; }
 
 .swiper-images .swiper-item:not(.nopointer):hover,
 .swiper-images .swiper-item:not(.nopointer):hover{

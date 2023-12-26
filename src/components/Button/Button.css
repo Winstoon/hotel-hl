@@ -30,3 +30,9 @@
 .button.uppercase {
     text-transform: uppercase;
 }
+
+.button.disabled{
+    pointer-events: none;
+    opacity: .8;
+    background: rgba(255, 255, 255, .1);
+}

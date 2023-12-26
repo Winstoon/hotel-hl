@@ -42,6 +42,11 @@ export const I18NS: I18NFullData = {
         [I18N.EN]: 'Reserve',
         [I18N.JP]: '予約',
     },
+    'comingbtn': {
+        [I18N.ZH]: '即将到来',
+        [I18N.EN]: 'Coming Soon',
+        [I18N.JP]: 'Coming Soon',
+    },
     'detail': {
         [I18N.ZH]: '前往',
         [I18N.EN]: 'Detail',
@@ -55,7 +60,7 @@ export const I18NS: I18NFullData = {
 // ------------------------------ contact ------------------------------
     'contact.caption': {
         [I18N.ZH]: '联系我们',
-        [I18N.EN]: 'Contact Us',
+        [I18N.EN]: 'CONTACT US',
         [I18N.JP]: 'お問い合わせ',
     },
     'contact.address': {
@@ -111,11 +116,11 @@ export const I18NS: I18NFullData = {
         [I18N.JP]: '纤尘不染中开启心灵对话',
     },
 
-    // 二世古雪屋
+    // 二世谷雪屋
     'arcadia.title': {
-        [I18N.ZH]: 'ARCADIA 二世古 雪屋',
-        [I18N.EN]: 'ARCADIA 二世古 雪屋',
-        [I18N.JP]: 'ARCADIA 二世古 雪屋',
+        [I18N.ZH]: 'ARCADIA 二世谷 雪屋',
+        [I18N.EN]: 'ARCADIA 二世谷 雪屋',
+        [I18N.JP]: 'ARCADIA 二世谷 雪屋',
     },
     'arcadia.title.firstname': {
         [I18N.ZH]: 'ARCADIA',
@@ -123,9 +128,9 @@ export const I18NS: I18NFullData = {
         [I18N.JP]: 'ARCADIA',
     },
     'arcadia.title.lastname': {
-        [I18N.ZH]: '二世古雪屋',
-        [I18N.EN]: '二世古雪屋',
-        [I18N.JP]: '二世古雪屋',
+        [I18N.ZH]: '二世谷雪屋',
+        [I18N.EN]: '二世谷雪屋',
+        [I18N.JP]: '二世谷雪屋',
     },
     'arcadia.desc1': {
         [I18N.ZH]: '滑雪盛揽 银白之梦',
@@ -204,9 +209,9 @@ export const I18NS: I18NFullData = {
         [I18N.JP]: 'NEW LAND',
     },
     'newland.title.lastname': {
-        [I18N.ZH]: 'Coming Soon',
-        [I18N.EN]: 'Coming Soon',
-        [I18N.JP]: 'Coming Soon',
+        [I18N.ZH]: 'COMING SOON',
+        [I18N.EN]: 'COMING SOON',
+        [I18N.JP]: 'COMING SOON',
     },
     'newland.desc1': {
         [I18N.ZH]: ' 举目翘盼 计日呈现',
@@ -433,9 +438,9 @@ export const I18NS: I18NFullData = {
         [I18N.JP]: '一期一会'
     },
     'detail.muan.4.img1.desc': {
-        [I18N.ZH]: '私享主厨 Omakase 每周一会',
-        [I18N.EN]: '私享主厨 Omakase 每周一会',
-        [I18N.JP]: '私享主厨 Omakase 每周一会'
+        [I18N.ZH]: '私享主厨 OMAKASE 每周一会',
+        [I18N.EN]: '私享主厨 OMAKASE 每周一会',
+        [I18N.JP]: '私享主厨 OMAKASE 每周一会'
     },
     'detail.muan.4.img2.caption': {
         [I18N.ZH]: '茶道品韵',
@@ -639,9 +644,9 @@ export const I18NS: I18NFullData = {
         [I18N.JP]: '意大利建筑巨匠',
     },
     'detail.arcadia.3.intro2': {
-        [I18N.ZH]: 'Riccardo Rubellia 倾心之作',
-        [I18N.EN]: 'Riccardo Rubellia 倾心之作',
-        [I18N.JP]: 'Riccardo Rubellia 倾心之作',
+        [I18N.ZH]: 'RICCARDO RUBELLIA 倾心之作',
+        [I18N.EN]: 'RICCARDO RUBELLIA 倾心之作',
+        [I18N.JP]: 'RICCARDO RUBELLIA 倾心之作',
     },
     'detail.arcadia.3.intro3': {
         [I18N.ZH]: '坐落于粉雪天堂二世谷核心比罗夫镇',
@@ -694,12 +699,33 @@ export const I18NS: I18NFullData = {
         [I18N.EN]: '行程无忧 出行尽在掌握',
         [I18N.JP]: '行程无忧 出行尽在掌握'
     },
+
     'detail.arcadia.4.img3.caption': {
+        [I18N.ZH]: '一站预约',
+        [I18N.EN]: '一站预约',
+        [I18N.JP]: '一站预约'
+    },
+    'detail.arcadia.4.img3.desc': {
+        [I18N.ZH]: '滑雪私教 雪票 缆车 餐厅',
+        [I18N.EN]: '滑雪私教 雪票 缆车 餐厅',
+        [I18N.JP]: '滑雪私教 雪票 缆车 餐厅'
+    },
+    'detail.arcadia.4.img4.caption': {
+        [I18N.ZH]: '专人陪同',
+        [I18N.EN]: '专人陪同',
+        [I18N.JP]: '专人陪同'
+    },
+    'detail.arcadia.4.img4.desc': {
+        [I18N.ZH]: '租购雪具 当地出行顾问',
+        [I18N.EN]: '租购雪具 当地出行顾问',
+        [I18N.JP]: '租购雪具 当地出行顾问'
+    },
+    'detail.arcadia.4.img5.caption': {
         [I18N.ZH]: '私享主厨',
         [I18N.EN]: '私享主厨',
         [I18N.JP]: '私享主厨'
     },
-    'detail.arcadia.4.img3.desc': {
+    'detail.arcadia.4.img5.desc': {
         [I18N.ZH]: '珍稀食材 享味高定晚宴',
         [I18N.EN]: '珍稀食材 享味高定晚宴',
         [I18N.JP]: '珍稀食材 享味高定晚宴'
@@ -808,14 +834,14 @@ export const I18NS: I18NFullData = {
     },
 
     'detail.arcadia.7.address': {
-        [I18N.ZH]: '〒044-0036 日本国北海道虻田郡倶知安町南 6 条西 1 丁目 5 番地 1',
-        [I18N.EN]: '〒044-0036 日本国北海道虻田郡倶知安町南 6 条西 1 丁目 5 番地 1',
-        [I18N.JP]: '〒044-0036 日本国北海道虻田郡倶知安町南 6 条西 1 丁目 5 番地 1'
+        [I18N.ZH]: '〒044-0089 日本国北海道虻田郡俱知安町二世谷比罗夫镇2条2丁目7番地18号',
+        [I18N.EN]: '〒044-0089 日本国北海道虻田郡俱知安町二世谷比罗夫镇2条2丁目7番地18号',
+        [I18N.JP]: '〒044-0089 日本国北海道虻田郡俱知安町二世谷比罗夫镇2条2丁目7番地18号'
     },
     'detail.arcadia.7.intro1': {
-        [I18N.ZH]: 'ARCADIA 位于北海道二世古地区最富盛名的比罗夫镇',
-        [I18N.EN]: 'ARCADIA 位于北海道二世古地区最富盛名的比罗夫镇',
-        [I18N.JP]: 'ARCADIA 位于北海道二世古地区最富盛名的比罗夫镇'
+        [I18N.ZH]: 'ARCADIA 位于北海道二世谷地区最富盛名的比罗夫镇',
+        [I18N.EN]: 'ARCADIA 位于北海道二世谷地区最富盛名的比罗夫镇',
+        [I18N.JP]: 'ARCADIA 位于北海道二世谷地区最富盛名的比罗夫镇'
     },
     'detail.arcadia.7.intro2': {
         [I18N.ZH]: '四季皆宜的度假圣地，距离札幌两小时车程',
@@ -838,9 +864,9 @@ export const I18NS: I18NFullData = {
     //     [I18N.JP]: '伴着远方的羊蹄山风光，享仅属于此地的身心疗愈'
     // },
     'detail.arcadia.7.mapaddr': {
-        [I18N.ZH]: '二世谷，比罗夫',
-        [I18N.EN]: '二世谷，比罗夫',
-        [I18N.JP]: '二世谷，比罗夫'
+        [I18N.ZH]: '二世谷，比罗夫镇',
+        [I18N.EN]: '二世谷，比罗夫镇',
+        [I18N.JP]: '二世谷，比罗夫镇'
     },
 
 
@@ -1035,19 +1061,19 @@ export const I18NS: I18NFullData = {
     // },
 
     'detail.kanrinkyo.7.address': {
-        [I18N.ZH]: '日本国北海道虻田郡倶知安町二世谷比罗夫２条２丁目7番18号',
-        [I18N.EN]: '日本国北海道虻田郡倶知安町二世谷比罗夫２条２丁目7番18号',
-        [I18N.JP]: '日本国北海道虻田郡倶知安町二世谷比罗夫２条２丁目7番18号'
+        [I18N.ZH]: '日本国北海道虻田郡倶知安町二世谷比罗夫镇２条２丁目7番18号',
+        [I18N.EN]: '日本国北海道虻田郡倶知安町二世谷比罗夫镇２条２丁目7番18号',
+        [I18N.JP]: '日本国北海道虻田郡倶知安町二世谷比罗夫镇２条２丁目7番18号'
     },
     'detail.kanrinkyo.7.addresswrap': {
-        [I18N.ZH]: '日本国北海道虻田郡倶知安町\n二世谷比罗夫２条２丁目7番18号',
-        [I18N.EN]: '日本国北海道虻田郡倶知安町\n二世谷比罗夫２条２丁目7番18号',
-        [I18N.JP]: '日本国北海道虻田郡倶知安町\n二世谷比罗夫２条２丁目7番18号'
+        [I18N.ZH]: '日本国北海道虻田郡倶知安町\n二世谷比罗夫镇２条２丁目7番18号',
+        [I18N.EN]: '日本国北海道虻田郡倶知安町\n二世谷比罗夫镇２条２丁目7番18号',
+        [I18N.JP]: '日本国北海道虻田郡倶知安町\n二世谷比罗夫镇２条２丁目7番18号'
     },
     'detail.kanrinkyo.7.intro1': {
-        [I18N.ZH]: 'KANRINKYO 位于北海道二世古地区最富盛名的比罗夫镇',
-        [I18N.EN]: 'KANRINKYO 位于北海道二世古地区最富盛名的比罗夫镇',
-        [I18N.JP]: 'KANRINKYO 位于北海道二世古地区最富盛名的比罗夫镇'
+        [I18N.ZH]: 'KANRINKYO 位于北海道二世谷地区最富盛名的比罗夫镇',
+        [I18N.EN]: 'KANRINKYO 位于北海道二世谷地区最富盛名的比罗夫镇',
+        [I18N.JP]: 'KANRINKYO 位于北海道二世谷地区最富盛名的比罗夫镇'
     },
     'detail.kanrinkyo.7.intro2': {
         [I18N.ZH]: '四季皆宜的度假圣地，距离札幌两小时车程',
@@ -1247,14 +1273,14 @@ export const I18NS: I18NFullData = {
     },
     
     'detail.yukoro.7.address': {
-        [I18N.ZH]: '日本国北海道虻田郡倶知安町二世谷比罗夫２条２丁目7番18号',
-        [I18N.EN]: '日本国北海道虻田郡倶知安町二世谷比罗夫２条２丁目7番18号',
-        [I18N.JP]: '日本国北海道虻田郡倶知安町二世谷比罗夫２条２丁目7番18号'
+        [I18N.ZH]: '日本国北海道虻田郡倶知安町二世谷比罗夫镇２条２丁目7番18号',
+        [I18N.EN]: '日本国北海道虻田郡倶知安町二世谷比罗夫镇２条２丁目7番18号',
+        [I18N.JP]: '日本国北海道虻田郡倶知安町二世谷比罗夫镇２条２丁目7番18号'
     },
     'detail.yukoro.7.intro1': {
-        [I18N.ZH]: 'YUKORO 位于北海道二世古地区最富盛名的比罗夫镇',
-        [I18N.EN]: 'YUKORO 位于北海道二世古地区最富盛名的比罗夫镇',
-        [I18N.JP]: 'YUKORO 位于北海道二世古地区最富盛名的比罗夫镇'
+        [I18N.ZH]: 'YUKORO 位于北海道二世谷地区最富盛名的比罗夫镇',
+        [I18N.EN]: 'YUKORO 位于北海道二世谷地区最富盛名的比罗夫镇',
+        [I18N.JP]: 'YUKORO 位于北海道二世谷地区最富盛名的比罗夫镇'
     },
     'detail.yukoro.7.intro2': {
         [I18N.ZH]: '四季皆宜的度假圣地，距离札幌两小时车程',

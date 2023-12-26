@@ -101,7 +101,7 @@ function Slide3 ({ data, ls }: { data: any, ls: ILetterSpacing }) {
                                 className={`pi ${active === idx ? 'active' : ''}`}
                                 style={{ letterSpacing: ls.TXT }}
                             >
-                                0{idx+1} {img.title}
+                                {img.title}
                             </div>
                         )}
                     </div>

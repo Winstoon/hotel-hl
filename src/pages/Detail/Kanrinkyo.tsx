@@ -11,8 +11,7 @@ export default function Kanrinkyo () {
             logo: '',
             caption: I18N['kanrinkyo.title'],
             intros: [I18N['kanrinkyo.desc1'], I18N['kanrinkyo.desc2']],
-            orderLink: '/',
-            gotoLink: '/',
+            coming: true,
             background: '/detail/kanrinkyo-1.jpg'
         },
         section2: {

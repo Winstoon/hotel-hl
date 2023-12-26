@@ -92,7 +92,7 @@ function Section4 ({ls, data}: {ls: ILetterSpacing, data: any}) {
                     <div className="intro" style={{ letterSpacing: ls.TXT }}>{intro}</div>
                 )}
             </div>
-            <div className="cards">
+            <div className="vscroll-cards">
                 { images.map((img: any, idx: number) =>
                     <div key={idx} className="card">
                         <Image src={img.src} />
@@ -287,7 +287,7 @@ export default function MobileYukoro () {
             <Section4 ls={ls} data={data.section4} />
             <Section5 ls={ls} data={data.section5} />
             <Section7 ls={ls} data={data.section7} />
-            <Footer background="#171616" />
+            <Footer background="#171616" coming />
         </div>
     )
 }
