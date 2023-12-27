@@ -8,7 +8,7 @@ export default function Muan () {
             logo: '/logos/muan.svg',
             caption: I18N['muan.title'],
             intros: [I18N['muan.desc1'], I18N['muan.desc2']],
-            orderLink: 'https://www.ishibekojimuan.com/',
+            orderLink: 'https://www.ishibekojimuan.com/reservation/',
             gotoLink: 'https://www.ishibekojimuan.com/',
             background: '/detail/muan-1.jpg'
         },

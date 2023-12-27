@@ -19,7 +19,6 @@ export default function Contact () {
                 <div className='right-cont' style={{ letterSpacing: ls.TXT }}>
                     <div className='caption' style={{ letterSpacing: ls.H1 }}>{I18N['contact.caption']}</div>
                     <div className='extra address'>{I18N['contact.address']}</div>
-                    <div className='extra postcode'>〒044-0036</div>
                     <div className='extra phone'>{I18N['contact.phone']}</div>
                     <div className='extra fax'>{I18N['contact.fax']}</div>
                     <div className='extra email'>

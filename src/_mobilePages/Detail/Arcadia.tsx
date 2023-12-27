@@ -201,7 +201,7 @@ export default function MobileArcadia () {
             desc1: I18N['arcadia.desc1'],
             desc2: I18N['arcadia.desc2'],
             src: '/mobile/detail/arcadia-1.jpg',
-            gotoLink: 'https://www.instagram.com/arcadiaryowhajapan/?igshid=NTc4MTIwNjQ2YQ==',
+            // gotoLink: 'https://www.instagram.com/arcadiaryowhajapan/?igshid=NTc4MTIwNjQ2YQ==',
         },
         section2: {
             intros: [
@@ -357,7 +357,7 @@ export default function MobileArcadia () {
             <Section5 ls={ls} data={data.section5} />
             <Section6 ls={ls} data={data.section6} />
             <Section7 ls={ls} data={data.section7} />
-            <Footer />
+            <Footer to="http://nisekoarcadia.co.jp/?order=true" />
         </div>
     )
 }

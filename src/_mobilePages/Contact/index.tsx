@@ -15,7 +15,6 @@ export default function MobileContact () {
             <div className="content">
                 <div style={{ letterSpacing: ls.H1 }} className="caption">{I18N['contact.caption']}</div>
                 <div style={{ letterSpacing: ls.TXT }} className='extra address'>{I18N['contact.address']}</div>
-                <div style={{ letterSpacing: ls.TXT }} className='extra postcode'>〒044-0036</div>
                 <div style={{ letterSpacing: ls.TXT }} className='extra phone'>{I18N['contact.phone']}</div>
                 <div style={{ letterSpacing: ls.TXT }} className='extra fax'>{I18N['contact.fax']}</div>
                 <div style={{ letterSpacing: ls.TXT }} className='extra email'>

@@ -5,7 +5,7 @@ import Image from '../Image'
 
 import './index.css'
 
-export default function Footer({ background, coming }: { coming?: boolean, background?: string }) {
+export default function Footer({ background, coming, to }: { coming?: boolean, background?: string, to?: string}) {
     const location = useLocation()
     const I18N = useCommonStore(state => state.I18N)
     const setWeChatDialogVisible = useCommonStore(state => state.setWeChatDialogVisible)
@@ -30,7 +30,7 @@ export default function Footer({ background, coming }: { coming?: boolean, backg
             </div>
             { isHome ? null :
                 <div className='footer-btn-group'>
-                    <Button3 to='#' disabled={coming}>
+                    <Button3 to={to || '#'} disabled={coming}>
                         {coming ? I18N['comingbtn'] : I18N['reservebtn']}
                         <Image src="/icons/right-arrow.svg" />
                     </Button3>

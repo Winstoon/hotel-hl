@@ -8,7 +8,7 @@ export default function Arcadia () {
             logo: '/logos/arcadia.svg',
             caption: I18N['arcadia.title'],
             intros: [I18N['arcadia.desc1'], I18N['arcadia.desc2']],
-            orderLink: '/',
+            orderLink: 'http://nisekoarcadia.co.jp/?order=true',
             gotoLink: 'https://www.instagram.com/arcadiaryowhajapan/?igshid=NTc4MTIwNjQ2YQ==',
             background: '/detail/arcadia-1.jpg'
         },
