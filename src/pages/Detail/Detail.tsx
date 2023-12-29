@@ -200,12 +200,11 @@ function Slide6 ({ ls, data, order }: { ls: ILetterSpacing, data: any, order: nu
 
 function Slide7 ({ ls, data, order }: { ls: ILetterSpacing, data: any, order: number }) {
     const active = order >= 6
-    const { contact, intros, mapImage, mapAddr, mapCoord } = data
+    const { contact, intros, mapImage, mapAddr, mapCoord, mapAbs } = data
     const { address, phonenumber, email } = contact
-    const { x, y } = mapCoord
 
     return (
-        <div className="section section7" style={{ letterSpacing: ls.TXT }}>
+        <div className={`section section7 ${mapAbs ? 'left' : ''}`} style={{ letterSpacing: ls.TXT }}>
             <div className={`content ${active ? 'animate' : ''}`}>
                 <div className="left">
                     <div className="contact">
@@ -223,13 +222,23 @@ function Slide7 ({ ls, data, order }: { ls: ILetterSpacing, data: any, order: nu
                     </div>
                 </div>
 
-                <div className="mapbox">
-                    <Image className="map-img" src={mapImage} />
-                    <div className="mapaddr" style={{ left: x, top: y }}>
-                        {mapAddr}
+                { mapAbs ?
+                    null :
+                    <div className="mapbox">
+                        <Image className="map-img" src={mapImage} />
+                        { mapAddr && mapCoord ? 
+                            <div className="mapaddr" style={{ left: mapCoord.x, top: mapCoord.y }}>
+                                {mapAddr}
+                            </div> : null
+                        }
                     </div>
-                </div>
+                }
             </div>
+            {
+                mapAbs ? <div className="mapboxabs">
+                    <Image className="map-img" src={mapImage} />
+                </div> : null
+            }
         </div>
     )
 }

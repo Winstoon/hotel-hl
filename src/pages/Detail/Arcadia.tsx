@@ -9,7 +9,7 @@ export default function Arcadia () {
             caption: I18N['arcadia.title'],
             intros: [I18N['arcadia.desc1'], I18N['arcadia.desc2']],
             orderLink: 'http://nisekoarcadia.co.jp/?order=true',
-            gotoLink: 'https://www.instagram.com/arcadiaryowhajapan/?igshid=NTc4MTIwNjQ2YQ==',
+            gotoLink: 'http://nisekoarcadia.co.jp/',
             background: '/detail/arcadia-1.jpg'
         },
         section2: {
@@ -67,11 +67,6 @@ export default function Arcadia () {
                     src: '/detail/arcadia-4-2.jpg',
                     caption: I18N['detail.arcadia.4.img2.caption'],
                     desc: I18N['detail.arcadia.4.img2.desc']
-                },
-                {
-                    src: '/detail/arcadia-4-3.jpg',
-                    caption: I18N['detail.arcadia.4.img3.caption'],
-                    desc: I18N['detail.arcadia.4.img3.desc']
                 },
                 {
                     src: '/detail/arcadia-4-3.jpg',
@@ -155,9 +150,8 @@ export default function Arcadia () {
                 I18N['detail.arcadia.7.intro3'],
                 I18N['detail.arcadia.7.intro4']
             ],
-            mapImage: '/detail/arcadia-map.png',
-            mapAddr: I18N['detail.arcadia.7.mapaddr'],
-            mapCoord: { x: 635, y: 240 }
+            mapAbs: true,
+            mapImage: '/detail/arcadia-map.png'
         },
 
         // same to the section 1

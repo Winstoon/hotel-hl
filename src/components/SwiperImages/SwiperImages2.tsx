@@ -46,7 +46,7 @@ export default function SwiperImages2 (props: IProps) {
                     />
                 }
                 <div className="images">
-                    <div className="wrap" style={{ transform: `translateX(${active === 0 ? 0 : '-100%'})`}}>
+                    <div className="wrap" style={{ transform: `translateX(${active === 0 ? 0 : (images.length === 5 ? '-66.66%' : '-100%')})`}}>
                     { images.map((img, idx) =>
                         <div className="img-box" key={idx}>
                             <div className="hover-animate"><Image className="img" src={img.src} /></div>

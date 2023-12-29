@@ -350,6 +350,15 @@
     transform: translateY(0);
 }
 
+.detail .section7.left{
+    justify-content: flex-start;
+}
+
+.detail .section7 .content .left{
+    position: relative;
+    z-index: 2;
+    margin-left: 200px;
+}
 
 .detail .section7 .content .contact{
     margin-bottom: 175px;
@@ -377,6 +386,16 @@
     font-size: 14px;
     line-height: 28px;
     opacity: .7;
+}
+
+.detail .section7 .mapboxabs{
+    position: absolute;
+    height: 100vh;
+    right: 0;
+}
+.detail .section7 .mapboxabs img{
+    height: 100%;
+    object-fit: cover;
 }
 
 .detail .section7 .content .mapbox{

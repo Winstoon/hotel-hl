@@ -32,7 +32,7 @@ export default function Footer({ background, coming, to }: { coming?: boolean, b
                 <div className='footer-btn-group'>
                     <Button3 to={to || '#'} disabled={coming}>
                         {coming ? I18N['comingbtn'] : I18N['reservebtn']}
-                        <Image src="/icons/right-arrow.svg" />
+                        { coming ? null : <Image src="/icons/right-arrow.svg" /> }
                     </Button3>
                 </div>
             }
