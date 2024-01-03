@@ -166,7 +166,7 @@ function Section7 ({ls, data}: {ls: ILetterSpacing, data: any}) {
     const { contact, intros, mapImage, mapAddr, mapCoord } = data
     return (
         <div className="section7" style={{ background: '#212020' }}>
-            <div className="intros">
+            <div className="intros" style={{ marginBottom: 30, opacity: 1 }}>
                 { intros.map((intro: string, idx: number) =>
                     <div
                         key={idx}
@@ -175,7 +175,7 @@ function Section7 ({ls, data}: {ls: ILetterSpacing, data: any}) {
                     >{intro}</div>
                 )}
             </div>
-            <div className="contact" style={{ width: 323 }}>
+            <div className="contact" style={{ position: 'relative', zIndex: 2, opacity: .7 }}>
                 <div className="address" style={{ letterSpacing: ls.TXT }}>
                     <Image className="icon" src="/icons/location.png" />
                     {contact.address}
@@ -183,9 +183,9 @@ function Section7 ({ls, data}: {ls: ILetterSpacing, data: any}) {
                 <div style={{ letterSpacing: ls.TXT }}>{contact.phonenumber}</div>
                 <div style={{ letterSpacing: ls.TXT }}>{contact.email}</div>
             </div>
-            <div className="map">
+            <div className="map" style={{ marginTop: -20 }}>
                 <div className="addr" style={{...mapCoord, letterSpacing: ls.TXT }}>{mapAddr}</div>
-                <Image className="map" src={mapImage} style={{ marginBottom: -40 }} />
+                <Image src={mapImage} style={{ marginBottom: -40 }} />
             </div>
         </div>
     )
@@ -341,7 +341,7 @@ export default function MobileArcadia () {
                 I18N['detail.arcadia.7.intro3'],
                 I18N['detail.arcadia.7.intro4']
             ],
-            mapImage: '/mobile/detail/arcadia-map.png',
+            mapImage: '/mobile/detail/arcadia-map.jpg',
             mapAddr: I18N['detail.arcadia.7.mapaddr'],
             mapCoord: { right: 30, top: 470 }
         },

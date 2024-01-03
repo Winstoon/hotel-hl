@@ -204,6 +204,8 @@
     background-color: #171616;
 }
 .mobile-detail .section7 .intros{
+    position: relative;
+    z-index: 2;
     padding: 0 24px;
     font-size: 14px;
     line-height: 24px;

@@ -149,7 +149,7 @@ function Section7 ({ls, data}: {ls: ILetterSpacing, data: any}) {
             </div>
             <div className="map">
                 <div className="addr" style={{...mapCoord, letterSpacing: ls.TXT }}>{mapAddr}</div>
-                <Image className="map" src={mapImage} />
+                <Image src={mapImage} />
             </div>
         </div>
     )

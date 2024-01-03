@@ -149,7 +149,7 @@ function Section7 ({ls, data}: {ls: ILetterSpacing, data: any}) {
             </div>
             <div className="map">
                 <div className="addr" style={{...mapCoord, letterSpacing: ls.TXT }}>{mapAddr}</div>
-                <Image className="map" src={mapImage} style={{ marginBottom: -40 }} />
+                <Image src={mapImage} style={{ marginBottom: -40 }} />
             </div>
         </div>
     )
@@ -281,8 +281,7 @@ export default function MobileKanrinkyo () {
                 // I18N['detail.kanrinkyo.7.intro5']
             ],
 
-            // same addr with Arcadia
-            mapImage: '/mobile/detail/arcadia-map.png',
+            mapImage: '/mobile/detail/kanrinkyo-map.png',
             mapAddr: I18N['detail.arcadia.7.mapaddr'],
             mapCoord: { right: 30, top: 470 }
         }

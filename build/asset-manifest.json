@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/static/css/main.d9cdf7c1.css",
-    "main.js": "/static/js/main.f04e5ee8.js",
+    "main.css": "/static/css/main.9327eb55.css",
+    "main.js": "/static/js/main.a6498d67.js",
     "static/media/morebg.jpg": "/static/media/morebg.c0228dfc185781a843cf.jpg",
     "index.html": "/index.html",
-    "main.d9cdf7c1.css.map": "/static/css/main.d9cdf7c1.css.map",
-    "main.f04e5ee8.js.map": "/static/js/main.f04e5ee8.js.map"
+    "main.9327eb55.css.map": "/static/css/main.9327eb55.css.map",
+    "main.a6498d67.js.map": "/static/js/main.a6498d67.js.map"
   },
   "entrypoints": [
-    "static/css/main.d9cdf7c1.css",
-    "static/js/main.f04e5ee8.js"
+    "static/css/main.9327eb55.css",
+    "static/js/main.a6498d67.js"
   ]
 }
