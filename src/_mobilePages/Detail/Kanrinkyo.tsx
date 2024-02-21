@@ -283,7 +283,7 @@ export default function MobileKanrinkyo () {
 
             mapImage: '/mobile/detail/kanrinkyo-map.png',
             mapAddr: I18N['detail.arcadia.7.mapaddr'],
-            mapCoord: { right: 30, top: 470 }
+            mapCoord: { right: 30, top: 438 }
         }
     }
 

@@ -1,4 +1,5 @@
 import { Fragment } from "react";
+import { I18N as Language } from "../../i18n";
 import CircleProgress from "../../_mobileComponents/CircleProgress";
 import FadeSlide from "../../_mobileComponents/FadeSlide/FadeSlide";
 import Footer from "../../_mobileComponents/Footer";
@@ -157,7 +158,9 @@ function Section7 ({ls, data}: {ls: ILetterSpacing, data: any}) {
 
 export default function MobileMuan () {
     const I18N = useCommonStore(state => state.I18N)
+    const lang = useCommonStore(state => state.lang)
     const ls = useCommonStore(state => state.letterSpacing)
+    const isEn = lang === Language.EN
 
     const data = {
         section1: {
@@ -191,7 +194,17 @@ export default function MobileMuan () {
         },
         section3: {
             caption: I18N['detail.muan.3.caption'],
-            intros: [
+            intros: isEn ? 
+            [
+                I18N['detail.muan.3.intro1'],
+                I18N['detail.muan.3.intro2'],
+                I18N['detail.muan.3.intro3'],
+                I18N['detail.muan.3.intro4'],
+                '',
+                I18N['detail.muan.3.intro5'],
+                I18N['detail.muan.3.intro6']
+            ] :
+            [
                 I18N['detail.muan.3.intro1'],
                 I18N['detail.muan.3.intro2'],
                 I18N['detail.muan.3.intro3'],
@@ -288,7 +301,7 @@ export default function MobileMuan () {
             ],
             mapImage: '/mobile/detail/muan-map.png',
             mapAddr: I18N['detail.muan.7.mapaddr'],
-            mapCoord: { right: 190, top: 416 }
+            mapCoord: { right: 180, top: 392 }
         },
     }
 

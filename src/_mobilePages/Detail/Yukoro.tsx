@@ -274,7 +274,7 @@ export default function MobileYukoro () {
             // same addr with Arcadia
             mapImage: '/mobile/detail/yukoro-map.png',
             mapAddr: I18N['detail.arcadia.7.mapaddr'],
-            mapCoord: { right: 30, top: 470 }
+            mapCoord: { right: 30, top: 438 }
         }
     }
 

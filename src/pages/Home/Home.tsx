@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import { I18N as Language } from "../../i18n";
 import { useCommonStore, useFadeSlide2Store } from "../../store";
 import Fullpage from "../../components/FullPage/FullPage";
 import Header from "../../components/Header/Header";
@@ -117,6 +118,58 @@ function Slide1 ({ order, ls }: { order: number, ls: ILetterSpacing }) {
 function Slide2 ({ order, ls }: { order: number, ls: ILetterSpacing }) {
     const active = order === 1
     const I18N = useCommonStore(state => state.I18N)
+    const lang = useCommonStore(state => state.lang)
+    const isEn = lang === Language.EN
+
+    const renderContent = () => {
+        return (
+            <div className="h2-intros" style={{ letterSpacing: ls.TXT }}>
+                {/* <div>{I18N['home.2.intro10']}</div>
+                <div>{I18N['home.2.intro9']}</div> */}
+                <div>{I18N['home.2.intro8']}</div>
+                <div>
+                    <span>{I18N['home.2.intro7.1']}</span>
+                    <span>{I18N['home.2.intro7.2']}</span>
+                    <span>{I18N['home.2.intro7.3']}</span>
+                    {/* <span>{I18N['home.2.intro7.4']}</span> */}
+                </div>
+                <div>{I18N['home.2.intro6']}</div>
+                <div>{I18N['home.2.intro5']}</div>
+                <div>
+                    <span>{I18N['home.2.intro4.1']}</span>
+                    <span>{I18N['home.2.intro4.2']}</span>
+                </div>
+                <div>{I18N['home.2.intro3']}</div>
+                <div>{I18N['home.2.intro2']}</div>
+                <div>{I18N['home.2.intro1']}</div>
+            </div>
+        )
+    }
+
+    const renderEnContent = () => {
+        return (
+            <div className="h2-intros en" style={{ letterSpacing: ls.TXT }}>
+                {/* <div>{I18N['home.2.intro10']}</div>
+                <div>{I18N['home.2.intro9']}</div> */}
+                <div>{I18N['home.2.intro1']}</div>
+                <div>{I18N['home.2.intro2']}</div>
+                <div>{I18N['home.2.intro3']}</div>
+                <div>
+                    <span>{I18N['home.2.intro4.1']}</span>
+                    <span>{I18N['home.2.intro4.2']}</span>
+                </div>
+                <div>{I18N['home.2.intro5']}</div>
+                <div>{I18N['home.2.intro6']}</div>
+                <div>
+                    <span>{I18N['home.2.intro7.1']}</span>
+                    <span>{I18N['home.2.intro7.2']}</span>
+                    <span>{I18N['home.2.intro7.3']}</span>
+                    {/* <span>{I18N['home.2.intro7.4']}</span> */}
+                </div>
+                <div>{I18N['home.2.intro8']}</div>
+            </div>
+        )
+    }
 
     return (
         <div className="section">
@@ -124,26 +177,7 @@ function Slide2 ({ order, ls }: { order: number, ls: ILetterSpacing }) {
                 <Image src="/jpgs/home-2.jpg" />
             </div>
             <div className={`content ${active ? 'animate': ''}`}>
-                <div className="h2-intros" style={{ letterSpacing: ls.TXT }}>
-                    {/* <div>{I18N['home.2.intro10']}</div>
-                    <div>{I18N['home.2.intro9']}</div> */}
-                    <div>{I18N['home.2.intro8']}</div>
-                    <div>
-                        <span>{I18N['home.2.intro7.1']}</span>
-                        <span>{I18N['home.2.intro7.2']}</span>
-                        <span>{I18N['home.2.intro7.3']}</span>
-                        {/* <span>{I18N['home.2.intro7.4']}</span> */}
-                    </div>
-                    <div>{I18N['home.2.intro6']}</div>
-                    <div>{I18N['home.2.intro5']}</div>
-                    <div>
-                        <span>{I18N['home.2.intro4.1']}</span>
-                        <span>{I18N['home.2.intro4.2']}</span>
-                    </div>
-                    <div>{I18N['home.2.intro3']}</div>
-                    <div>{I18N['home.2.intro2']}</div>
-                    <div>{I18N['home.2.intro1']}</div>
-                </div>
+                { isEn ? renderEnContent() : renderContent ()}
             </div>
         </div>
     )

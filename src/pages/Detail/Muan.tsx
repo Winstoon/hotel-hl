@@ -1,8 +1,10 @@
 import { useCommonStore } from "../../store"
+import { I18N as Language } from "../../i18n"
 import Detail from "./Detail"
 
 export default function Muan () {
-    const I18N = useCommonStore(state => state.I18N)
+    const [I18N, lang] = useCommonStore(state => [state.I18N, state.lang])
+    const isEn = lang === Language.EN
     const data = {
         section1: {
             logo: '/logos/muan.svg',
@@ -37,7 +39,17 @@ export default function Muan () {
         },
         section3: {
             caption: I18N['detail.muan.3.caption'],
-            intros: [
+            intros: isEn ? 
+            [
+                I18N['detail.muan.3.intro1'],
+                I18N['detail.muan.3.intro2'],
+                I18N['detail.muan.3.intro3'],
+                I18N['detail.muan.3.intro4'],
+                '',
+                I18N['detail.muan.3.intro5'],
+                I18N['detail.muan.3.intro6']
+            ] :
+            [
                 I18N['detail.muan.3.intro1'],
                 I18N['detail.muan.3.intro2'],
                 I18N['detail.muan.3.intro3'],
@@ -146,5 +158,5 @@ export default function Muan () {
         // }
     }
 
-    return <Detail data={data} />
+    return <Detail data={data} className="muan" />
 }

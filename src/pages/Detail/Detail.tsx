@@ -139,7 +139,7 @@ function Slide5 ({ ls, data, order }: { ls: ILetterSpacing, data: any, order: nu
                             { intro.title ? <div className="intro-tit" style={{ letterSpacing: ls.TXT }}>{intro.title}</div> : null }
                             { intro.descs.map((desc: string, index: number) =>
                                 desc ?
-                                    <div className="intro-desc" key={`d-${index}`} style={{ letterSpacing: ls.TXT }}>{desc}</div> :
+                                    <pre className="intro-desc" key={`d-${index}`} style={{ letterSpacing: ls.TXT }}>{desc}</pre> :
                                     <div style={{height: 24}}></div>
                             )}
                         </div>
@@ -273,7 +273,7 @@ export default function Detail (props: { className?: string, data: any }) {
 
     const headerConfig = {
         lightmode: pageSectionOrder === 1 || pageSectionOrder === 3,
-        showOrderBtn: pageSectionOrder > 0,
+        showOrderBtn: pageSectionOrder > 0 && !!className,
         orderLink: data.section1.orderLink,
         smallLogo: true
     }

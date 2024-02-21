@@ -185,11 +185,23 @@
     justify-content: center;
 }
 
+.h2-intros.en{
+    align-items: center;
+    flex-direction: column;
+}
+
 .h2-intros > div{
     width: 16px;
     font-size: 16px;
     line-height: 24px;
     margin-right: 20px;
+}
+
+.h2-intros.en > div{
+    width: auto;
+    font-size: 16px;
+    line-height: 40px;
+    margin-right: 0;
 }
 
 .h2-intros > div:last-child{
@@ -201,6 +213,10 @@
     margin-bottom: 20px;
 }
 .h2-intros > div > span:last-child{
+    margin-bottom: 0;
+}
+
+.h2-intros.en > div > span{
     margin-bottom: 0;
 }
 

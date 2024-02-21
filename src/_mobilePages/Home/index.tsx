@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { I18N as Language } from "../../i18n";
 import { useCommonStore } from "../../mobileStore";
 import { ILetterSpacing } from "../../letterSpacings";
 import Image, { AnimateBg } from "../../_mobileComponents/Image";
@@ -46,9 +47,11 @@ function Slide1 ({ data, ls }: { data: any, ls: ILetterSpacing }) {
 
 function Slide2 ({ data, ls }: { data: any, ls: ILetterSpacing }) {
     const I18N = useCommonStore(state => state.I18N)
+    const lang = useCommonStore(state => state.lang)
+    const isEn = lang === Language.EN
 
-    return (
-        <div className="section section2" style={{ height: window.innerHeight}}>
+    const renderContent = () => {
+        return (
             <div className="content" style={{ letterSpacing: ls.TXT }}>
                 <div>{I18N['home.2.intro8']}</div>
                 <div>
@@ -67,6 +70,35 @@ function Slide2 ({ data, ls }: { data: any, ls: ILetterSpacing }) {
                 <div>{I18N['home.2.intro2']}</div>
                 <div>{I18N['home.2.intro1']}</div>
             </div>
+        )
+    }
+
+    const renderEnContent = () => {
+        return (
+            <div className="content en" style={{ letterSpacing: ls.TXT }}>
+                <div>{I18N['home.2.intro1']}</div>
+                <div>{I18N['home.2.intro2']}</div>
+                <div>{I18N['home.2.intro3']}</div>
+                <div>
+                    <span>{I18N['home.2.intro4.1']}</span>
+                    <span>{I18N['home.2.intro4.2']}</span>
+                </div>
+                <div>{I18N['home.2.intro5']}</div>
+                <div>{I18N['home.2.intro6']}</div>
+                <div>
+                    <span>{I18N['home.2.intro7.1']}</span>
+                    <span>{I18N['home.2.intro7.2']}</span>
+                    <span>{I18N['home.2.intro7.3']}</span>
+                    {/* <span>{I18N['home.2.intro7.4']}</span> */}
+                </div>
+                <div>{I18N['home.2.intro8']}</div>
+            </div>
+        )
+    }
+
+    return (
+        <div className="section section2" style={{ height: window.innerHeight}}>
+            { isEn ? renderEnContent() : renderContent() }
             <AnimateBg src="/mobile/home/home-2.jpg" />
         </div>
     )

@@ -109,6 +109,8 @@
     padding: 120px 0 20px;
     line-height: 24px;
     color: rgba(0, 0, 0, .7);
+    white-space: pre-wrap;
+    text-align: center;
 }
 
 .detail .section2 .content .intros .empty {
@@ -159,6 +161,7 @@
 .detail .section3 .content .intros{
     font-size: 14px;
     line-height: 24px;
+    white-space: pre-wrap;
 }
 
 .detail .section3 .content .intros .empty{
@@ -289,6 +292,10 @@
     line-height: 24px;
     margin-bottom: 28px;
     white-space: nowrap;
+}
+.detail .section5 .content .intro .intro-desc{
+    font-family: inherit;
+    margin: 0;
 }
 
 .detail .section5 .content .intro:last-child{

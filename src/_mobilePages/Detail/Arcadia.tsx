@@ -342,7 +342,8 @@ export default function MobileArcadia () {
                 I18N['detail.arcadia.7.intro4']
             ],
             mapImage: '/mobile/detail/arcadia-map.jpg',
-            mapAddr: I18N['detail.arcadia.7.mapaddr'],
+            // mapAddr: I18N['detail.arcadia.7.mapaddr'],
+            mapAddr: '',
             mapCoord: { right: 30, top: 470 }
         },
     }

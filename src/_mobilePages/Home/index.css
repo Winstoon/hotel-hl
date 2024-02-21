@@ -24,6 +24,9 @@
     z-index: 2;
 }
 
+.mobile-home .section1 .h1-content {
+    max-width: 85%;
+}
 .mobile-home .section1 .h1-content .title{
     font-size: 22px;
     margin: 0 0 23px;
@@ -34,6 +37,18 @@
     align-items: flex-start;
     gap: 10px;
 }
+
+.mobile-home .section2 .content.en {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.mobile-home .section2 .content.en > div{
+    width: auto;
+    display: flex;
+    flex-direction: row;
+}
+
 
 .mobile-home .section2 .content>div {
     width: 18px;
