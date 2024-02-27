@@ -34,12 +34,12 @@ export const I18NS: I18NFullData = {
     },
     'reserve': {
         [I18N.ZH]: '预订',
-        [I18N.EN]: 'Reserve',
+        [I18N.EN]: 'RESERVE',
         [I18N.JP]: '予約',
     },
     'reservebtn': {
         [I18N.ZH]: '预订',
-        [I18N.EN]: 'Reserve',
+        [I18N.EN]: 'RESERVE',
         [I18N.JP]: '予約',
     },
     'comingbtn': {
@@ -49,7 +49,7 @@ export const I18NS: I18NFullData = {
     },
     'detail': {
         [I18N.ZH]: '前往',
-        [I18N.EN]: 'Go To',
+        [I18N.EN]: 'GO TO',
         [I18N.JP]: '前往',
     },
     'contactus': {
@@ -66,7 +66,7 @@ export const I18NS: I18NFullData = {
     'contact.address': {
         [I18N.ZH]: '地址：〒044-0036 日本国北海道虻田郡倶知安町南6条西1丁目5番地1',
         [I18N.EN]: 'Add: 5-1, 1-chome, South 6-jo West Kutchan-cho Abuta-Gun Hokkaido, Japan 044-0036',
-        [I18N.JP]: '住所：〒044-0036 北海道虻田郡倶知安町南6条西1丁目5番地',
+        [I18N.JP]: '住所: 〒044-0036 北海道虻田郡倶知安町南6条西1丁目5番地',
     },
     'contact.phone': {
         [I18N.ZH]: '电话：+81 136 55 8917',
@@ -93,7 +93,7 @@ export const I18NS: I18NFullData = {
     'muan.title': {
         [I18N.ZH]: 'MUAN 京都 梦庵',
         [I18N.EN]: 'ISHIBEKOJI MUAN',
-        [I18N.JP]: 'MUAN 京都 梦庵',
+        [I18N.JP]: 'MUAN 京都 夢庵',
     },
     'muan.title.firstname': {
         [I18N.ZH]: 'MUAN',
@@ -103,7 +103,7 @@ export const I18NS: I18NFullData = {
     'muan.title.lastname': {
         [I18N.ZH]: '京都梦庵',
         [I18N.EN]: 'ISHIBEKOJI',
-        [I18N.JP]: '京都梦庵',
+        [I18N.JP]: '京都夢庵',
     },
     'muan.desc1': {
         [I18N.ZH]: '石塀幽径 悠然居所',
@@ -114,6 +114,11 @@ export const I18NS: I18NFullData = {
         [I18N.ZH]: '纤尘不染中开启心灵对话',
         [I18N.EN]: 'Speaking to your soul in a dust-free space',
         [I18N.JP]: '調和の取れたしつらえに囲まれ、心の対話へいざなおう',
+    },
+    'muan.desc2.mobile': {
+        [I18N.ZH]: '纤尘不染中开启心灵对话',
+        [I18N.EN]: 'Speaking to your soul in a dust-free space',
+        [I18N.JP]: '調和の取れたしつらえに囲まれ\n心の対話へいざなおう',
     },
 
     // 二世谷雪屋
@@ -136,6 +141,11 @@ export const I18NS: I18NFullData = {
         [I18N.ZH]: '滑雪盛揽 银白之梦',
         [I18N.EN]: 'Skiing in a dreamy slivery white view',
         [I18N.JP]: 'スキーを存分に楽しめる 白銀の中に身を委ねる',
+    },
+    'arcadia.desc1.mobile': {
+        [I18N.ZH]: '滑雪盛揽 银白之梦',
+        [I18N.EN]: 'Skiing in a dreamy slivery white view',
+        [I18N.JP]: 'スキーを存分に楽しめる\n白銀の中に身を委ねる',
     },
     'arcadia.desc2': {
         [I18N.ZH]: '绵延叠嶂中探寻羊蹄山麓',
@@ -164,6 +174,11 @@ export const I18NS: I18NFullData = {
         [I18N.EN]: 'Stroll around the compound to clear your mind',
         [I18N.JP]: 'のんびりと庭を散策し、心も身体もリフレッシュできる宿',
     },
+    'kanrinkyo.desc1.mobile': {
+        [I18N.ZH]: '閑庭漫步 踏遍清心',
+        [I18N.EN]: 'Stroll around the compound to clear your mind',
+        [I18N.JP]: 'のんびりと庭を散策し\n心も身体もリフレッシュできる宿',
+    },
     'kanrinkyo.desc2': {
         [I18N.ZH]: '静怡侘寂中品味风雅美学',
         [I18N.EN]: 'Immerse in a wabi-sabi-style aesthetics',
@@ -190,6 +205,11 @@ export const I18NS: I18NFullData = {
         [I18N.ZH]: '暖意相传 尘埃涤荡',
         [I18N.EN]: 'Let the warmth fill your body, Let the dust be washed off',
         [I18N.JP]: '身体がほっこりと温まる中、疲れまで洗い流す',
+    },
+    'yukoro.desc1.mobile': {
+        [I18N.ZH]: '暖意相传 尘埃涤荡',
+        [I18N.EN]: 'Let the warmth fill your body\nLet the dust be washed off',
+        [I18N.JP]: '身体がほっこりと温まる中\n疲れまで洗い流す',
     },
     'yukoro.desc2': {
         [I18N.ZH]: '惬意舒缓中体悟亘古文脉',
@@ -362,7 +382,7 @@ export const I18NS: I18NFullData = {
     'detail.muan.2.intro2': {
         [I18N.ZH]: '隐入梦庵 体味京都风雅',
         [I18N.EN]: 'Find the secret grace of Kyoto in MUAN',
-        [I18N.JP]: '京わしい風情が漂う宿　静寂な夢庵へ',
+        [I18N.JP]: '京わしい風情が漂う宿 静寂な夢庵へ',
     },
     'detail.muan.2.intro3': {
         [I18N.ZH]: '透过窗棂',
@@ -527,8 +547,8 @@ export const I18NS: I18NFullData = {
     },
     'detail.muan.5.intro1.desc4': {
         [I18N.ZH]: '悠享石塀小路的静谧夜色',
-        [I18N.EN]: 'Enjoy the silent night in Isibekouji',
-        [I18N.JP]: '石塀小路で静かな夜が優しく包み込\nんでくれる'
+        [I18N.EN]: 'Enjoy the silent night in Ishibekoji',
+        [I18N.JP]: '石塀小路で静かな夜が優しく包み込んでくれる'
     },
     'detail.muan.5.intro2.title': {
         [I18N.ZH]: '现代灵感',
@@ -548,7 +568,7 @@ export const I18NS: I18NFullData = {
     'detail.muan.5.intro2.desc3': {
         [I18N.ZH]: '现代化便利设施 感受专属放松时刻',
         [I18N.EN]: 'Modern convenient facilities for your “me time”',
-        [I18N.JP]: '機能性を揃える充実な客室設備で寛\nぎのひと時をご提供'
+        [I18N.JP]: '機能性を揃える充実な客室設備で寛ぎのひと時をご提供'
     },
     'detail.muan.5.intro2.desc4': {
         [I18N.ZH]: '日式酒廊 品赏京都风味',
@@ -558,13 +578,23 @@ export const I18NS: I18NFullData = {
 
     // Muan P6
     'detail.muan.7.address': {
-        [I18N.ZH]: '〒605-0825 日本国京都市東山区下河原町463-10',
-        [I18N.EN]: '463-10, Shimokawara-cho, Higashiyama-ku, Kyoto-shi, Kyoto 605-0825 Japan',
-        [I18N.JP]: '〒605-0825 京都市東山区下河原町463-10'
+        [I18N.ZH]: '地址：〒605-0825 日本国京都市東山区下河原町463-10',
+        [I18N.EN]: 'Add: 463-10, Shimokawara-cho, Higashiyama-ku, Kyoto-shi, Kyoto 605-0825 Japan',
+        [I18N.JP]: '住所: 〒605-0825 京都市東山区下河原町463-10'
+    },
+    'detail.muan.7.tel': {
+        [I18N.ZH]: '电话：+81 075 741 8815',
+        [I18N.EN]: 'Tel: +81 075 741 8815',
+        [I18N.JP]: '電話: +81 075 741 8815'
+    },
+    'detail.muan.7.email': {
+        [I18N.ZH]: '邮箱：info@ishibekojimuan.com',
+        [I18N.EN]: 'E-mail: info@ishibekojimuan.com',
+        [I18N.JP]: '電子メール: info@ishibekojimuan.com'
     },
     'detail.muan.7.intro1': {
         [I18N.ZH]: 'MUAN 京都梦庵位于京都石塀小路',
-        [I18N.EN]: 'MUAN is located at Isibekouji in Kyoto',
+        [I18N.EN]: 'MUAN is located at Ishibekoji in Kyoto',
         [I18N.JP]: '京都の石垣小路に佇む MUAN 京都夢庵'
     },
     'detail.muan.7.intro2': {
@@ -595,6 +625,11 @@ export const I18NS: I18NFullData = {
     'detail.muan.7.mapaddr': {
         [I18N.ZH]: '東山区，下河原町',
         [I18N.EN]: 'Shimokawara-cho, Higashiyama-ku',
+        [I18N.JP]: '東山区，下河原町',
+    },
+    'detail.muan.7.mapaddr.mobile': {
+        [I18N.ZH]: '東山区，下河原町',
+        [I18N.EN]: 'Shimokawara-cho\nHigashiyama-ku',
         [I18N.JP]: '東山区，下河原町',
     },
 
@@ -695,7 +730,7 @@ export const I18NS: I18NFullData = {
     },
     'detail.arcadia.4.img1.desc': {
         [I18N.ZH]: '入微间 尽享怡然舒心',
-        [I18N.EN]: 'Attention to details\nJust relax and enjoy',
+        [I18N.EN]: 'Attention to details, just relax and enjoy',
         [I18N.JP]: '滞在中の時間を快適にするお手伝いします'
     },
     'detail.arcadia.4.img2.caption': {
@@ -717,7 +752,7 @@ export const I18NS: I18NFullData = {
     'detail.arcadia.4.img3.desc': {
         [I18N.ZH]: '滑雪私教 雪票 缆车 餐厅',
         [I18N.EN]: 'Ski private coach, snow ticket, cable car and restaurant.',
-        [I18N.JP]: 'スキーレッスン、スキーチケット\nリフト、 レストランなどの手配'
+        [I18N.JP]: 'スキーレッスン、スキーチケットリフト、 レストランなどの手配'
     },
     'detail.arcadia.4.img4.caption': {
         [I18N.ZH]: '专人陪同',
@@ -788,7 +823,7 @@ export const I18NS: I18NFullData = {
     },
     'detail.arcadia.5.intro2.desc3': {
         [I18N.ZH]: '雪具干燥室 纵享滑雪之旅',
-        [I18N.EN]: 'Ski Drying Room.\nFor your ultimate skiing experience',
+        [I18N.EN]: 'Ski Drying Room. For your ultimate skiing experience',
         [I18N.JP]: 'スキー乾燥室でスキー旅をお手伝いします'
     },
     'detail.arcadia.5.intro2.desc4': {
@@ -846,9 +881,19 @@ export const I18NS: I18NFullData = {
 
     // Arcadia P7
     'detail.arcadia.7.address': {
-        [I18N.ZH]: '〒044-0089 日本国北海道虻田郡俱知安町二世谷比罗夫镇2条2丁目7番地18号',
-        [I18N.EN]: '7-18, 2-chome, 2-jo, Nisekohirafu, Kutchan-cho, Abuta-gun, Hokkaido 044-0089 Japan',
-        [I18N.JP]: '〒044-0089 北海道虻田郡倶知安町ニセコひらふ2条2丁目7番地18号'
+        [I18N.ZH]: '地址：〒044-0089 日本国北海道虻田郡俱知安町二世谷比罗夫镇2条2丁目7番地18号',
+        [I18N.EN]: 'Add: 7-18, 2-chome, 2-jo, Nisekohirafu, Kutchan-cho, Abuta-gun, Hokkaido 044-0089 Japan',
+        [I18N.JP]: '住所: 〒044-0089 北海道虻田郡倶知安町ニセコひらふ2条2丁目7番地18号'
+    },
+    'detail.arcadia.7.tel': {
+        [I18N.ZH]: '电话：+81 0136 55 7559',
+        [I18N.EN]: 'Tel: +81 0136 55 7559',
+        [I18N.JP]: '電話: +81 0136 55 7559'
+    },
+    'detail.arcadia.7.email': {
+        [I18N.ZH]: '邮箱：info.arcadia@ryowhagroup.com',
+        [I18N.EN]: 'E-mail: info.arcadia@ryowhagroup.com',
+        [I18N.JP]: '電子メール: info.arcadia@ryowhagroup.com'
     },
     'detail.arcadia.7.intro1': {
         [I18N.ZH]: 'ARCADIA 位于北海道二世谷地区最富盛名的比罗夫镇',
@@ -973,7 +1018,7 @@ export const I18NS: I18NFullData = {
     },
     'detail.kanrinkyo.4.img1.desc': {
         [I18N.ZH]: '入微间 尽享怡然舒心',
-        [I18N.EN]: 'Attention to details\nJust relax and enjoy',
+        [I18N.EN]: 'Attention to details, just relax and enjoy',
         [I18N.JP]: '滞在中の時間を快適にするお手伝いします',
     },
     'detail.kanrinkyo.4.img2.caption': {
@@ -1026,7 +1071,7 @@ export const I18NS: I18NFullData = {
     'detail.kanrinkyo.5.intro1.desc4': {
         [I18N.ZH]: '私人影院 尽享视觉盛宴',
         [I18N.EN]: 'A visually impactful home cinema experience',
-        [I18N.JP]: 'プライベートシネマの大迫力で映像\n体験を味わえる',
+        [I18N.JP]: 'プライベートシネマの大迫力で映像体験を味わえる',
     },
     'detail.kanrinkyo.5.intro2.title': {
         [I18N.ZH]: '私享设施',
@@ -1045,8 +1090,8 @@ export const I18NS: I18NFullData = {
     },
     'detail.kanrinkyo.5.intro2.desc3': {
         [I18N.ZH]: '专属25米超大泳池 时刻关注体调',
-        [I18N.EN]: 'Exclusive 25 meters long swimming pool.\nTracking your health all the time',
-        [I18N.JP]: '専用25メートルプールでいつでも体調\nを整えます',
+        [I18N.EN]: 'Exclusive 25 meters long swimming pool. Tracking your health all the time',
+        [I18N.JP]: '専用25メートルプールでいつでも体調を整えます',
     },
     'detail.kanrinkyo.5.intro2.desc4': {
         [I18N.ZH]: '专业级酒窖 窖藏名酒佳酿',
@@ -1055,7 +1100,7 @@ export const I18NS: I18NFullData = {
     },
     'detail.kanrinkyo.5.intro2.desc5': {
         [I18N.ZH]: '雪具干燥室 纵享滑雪之旅',
-        [I18N.EN]: 'Ski Drying Room.\nFor your ultimate skiing experience',
+        [I18N.EN]: 'Ski Drying Room. For your ultimate skiing experience',
         [I18N.JP]: 'スキー乾燥室でスキー旅をお手伝いします',
     },
 
@@ -1077,14 +1122,19 @@ export const I18NS: I18NFullData = {
 
     // Kanrinkyo P6
     'detail.kanrinkyo.7.address': {
-        [I18N.ZH]: '〒044-0080 日本国北海道虻田郡倶知安町二世谷比罗夫镇1条1丁目133-13, 133-40, 137-9',
-        [I18N.EN]: '133-13, 133-40, 137-9, 1-chome, 1-jo, Nisekohirafu, Kutchan-cho, Abuta-gun, Hokkaido 044-0080 Japan',
-        [I18N.JP]: '〒044-0080 北海道虻田郡倶知安町ニセコひらふ1条1丁目133-13, 133-40, 137-9'
+        [I18N.ZH]: '地址：〒044-0080 日本国北海道虻田郡倶知安町二世谷比罗夫镇1条1丁目133-13, 133-40, 137-9',
+        [I18N.EN]: 'Add: 133-13, 133-40, 137-9, 1-chome, 1-jo, Nisekohirafu, Kutchan-cho, Abuta-gun, Hokkaido 044-0080 Japan',
+        [I18N.JP]: '住所: 〒044-0080 北海道虻田郡倶知安町ニセコひらふ1条1丁目133-13, 133-40, 137-9'
     },
-    'detail.kanrinkyo.7.addresswrap': {
-        [I18N.ZH]: '〒044-0080 日本国北海道虻田郡倶知安町二世谷比罗夫镇1条1丁目133-13, 133-40, 137-9',
-        [I18N.EN]: '133-13, 133-40, 137-9, 1-chome, 1-jo, Nisekohirafu, Kutchan-cho, Abuta-gun, Hokkaido 044-0080 Japan',
-        [I18N.JP]: '〒044-0080 北海道虻田郡倶知安町ニセコひらふ1条1丁目133-13, 133-40, 137-9'
+    'detail.kanrinkyo.7.tel': {
+        [I18N.ZH]: '电话：+81 136 55 8917',
+        [I18N.EN]: 'Tel: +81 136 55 8917',
+        [I18N.JP]: '電話: +81 136 55 8917'
+    },
+    'detail.kanrinkyo.7.email': {
+        [I18N.ZH]: '邮箱：info@ryowhagroup.com',
+        [I18N.EN]: 'E-mail: info@ryowhagroup.com',
+        [I18N.JP]: '電子メール: info@ryowhagroup.com'
     },
     'detail.kanrinkyo.7.intro1': {
         [I18N.ZH]: 'KANRINKYO 位于北海道二世谷地区最富盛名的比罗夫镇',
@@ -1114,8 +1164,13 @@ export const I18NS: I18NFullData = {
         [I18N.JP]: '百年の間で受け継がれる天然温泉'
     },
     'detail.yukoro.2.intro2': {
-        [I18N.ZH]: '日本建筑大师中山真琴倾力巨献 ',
+        [I18N.ZH]: '日本建筑大师中山真琴倾力巨献',
         [I18N.EN]: 'Presented by Japanese master architect Nakayama Makoto',
+        [I18N.JP]: '日本建築巨匠 中山眞琴氏が手がけた傑作 '
+    },
+    'detail.yukoro.2.intro2.mobile': {
+        [I18N.ZH]: '日本建筑大师中山真琴倾力巨献',
+        [I18N.EN]: 'Presented by Japanese master architect\nNakayama Makoto',
         [I18N.JP]: '日本建築巨匠 中山眞琴氏が手がけた傑作 '
     },
     'detail.yukoro.2.intro3': {
@@ -1135,7 +1190,7 @@ export const I18NS: I18NFullData = {
     },
     'detail.yukoro.2.intro6': {
         [I18N.ZH]: '或静观飘落的飞雪',
-        [I18N.EN]: 'Or watch the falling snow in winter',
+        [I18N.EN]: 'or watch the falling snow in winter',
         [I18N.JP]: '冬は一面雪化粧'
     },
     'detail.yukoro.2.intro7': {
@@ -1287,7 +1342,7 @@ export const I18NS: I18NFullData = {
     'detail.yukoro.5.intro9': {
         [I18N.ZH]: '挥杆畅享高尔夫乐趣',
         [I18N.EN]: 'Or have fun in golfing',
-        [I18N.JP]: 'リゾートゴルフなどのアクティビティをご\n堪能いただきます'
+        [I18N.JP]: 'リゾートゴルフなどのアクティビティをご堪能いただきます'
     },
     
     // Yukoro P6
@@ -1295,6 +1350,16 @@ export const I18NS: I18NFullData = {
         [I18N.ZH]: '〒044-0089 日本国北海道虻田郡倶知安町二世谷比罗夫镇2条1丁目163-53, 163-61, 163-158',
         [I18N.EN]: '163-53, 163-61, 163-158, 1-chome, 2-jo, Nisekohirafu, Kutchan-cho, Abuta-gun, Hokkaido 044-0089 Japan',
         [I18N.JP]: '〒044-0089 北海道虻田郡倶知安町ニセコひらふ2条1丁目163-53, 163-61, 163-158'
+    },
+    'detail.yukoro.7.tel': {
+        [I18N.ZH]: '电话：+81 136 55 8917',
+        [I18N.EN]: 'Tel: +81 136 55 8917',
+        [I18N.JP]: '電話: +81 136 55 8917'
+    },
+    'detail.yukoro.7.email': {
+        [I18N.ZH]: '邮箱：info@ryowhagroup.com',
+        [I18N.EN]: 'E-mail: info@ryowhagroup.com',
+        [I18N.JP]: '電子メール: info@ryowhagroup.com'
     },
     'detail.yukoro.7.intro1': {
         [I18N.ZH]: 'YUKORO 位于北海道二世谷地区最富盛名的比罗夫镇',

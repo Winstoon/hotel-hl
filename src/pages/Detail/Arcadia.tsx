@@ -3,12 +3,13 @@ import Detail from "./Detail"
 
 export default function Arcadia () {
     const I18N = useCommonStore(state => state.I18N)
+    const lang = useCommonStore(state => state.lang)
     const data = {
         section1: {
             logo: '/logos/arcadia.svg',
             caption: I18N['arcadia.title'],
             intros: [I18N['arcadia.desc1'], I18N['arcadia.desc2']],
-            orderLink: 'http://nisekoarcadia.co.jp/?order=true',
+            orderLink: `http://nisekoarcadia.co.jp/?order=true&lang=${lang}`,
             gotoLink: 'http://nisekoarcadia.co.jp/',
             background: '/detail/arcadia-1.jpg'
         },
@@ -141,8 +142,8 @@ export default function Arcadia () {
         section7: {
             contact: {
                 address: I18N['detail.arcadia.7.address'],
-                phonenumber: '+81 0136 55 7559',
-                email: 'info.arcadia@ryowhagroup.com'
+                phonenumber: I18N['detail.arcadia.7.tel'],
+                email: I18N['detail.arcadia.7.email']
             },
             intros: [
                 I18N['detail.arcadia.7.intro1'],

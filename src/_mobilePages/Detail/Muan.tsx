@@ -142,7 +142,6 @@ function Section7 ({ls, data}: {ls: ILetterSpacing, data: any}) {
             </div>
             <div className="contact">
                 <div className="address" style={{ letterSpacing: ls.TXT }}>
-                    <Image className="icon" src="/icons/location.png" />
                     {contact.address}
                 </div>
                 <div style={{ letterSpacing: ls.TXT }}>{contact.phonenumber}</div>
@@ -166,7 +165,7 @@ export default function MobileMuan () {
         section1: {
             title: I18N['muan.title'],
             desc1: I18N['muan.desc1'],
-            desc2: I18N['muan.desc2'],
+            desc2: I18N['muan.desc2.mobile'],
             src: '/mobile/detail/muan-1.jpg'
         },
         section2: {
@@ -288,8 +287,8 @@ export default function MobileMuan () {
         section7: {
             contact: {
                 address: I18N['detail.muan.7.address'],
-                phonenumber: '+81 075 741 8815',
-                email: 'info@ishibekojimuan.com'
+                phonenumber: I18N['detail.muan.7.tel'],
+                email: I18N['detail.muan.7.email']
             },
             intros: [
                 I18N['detail.muan.7.intro1'],
@@ -300,8 +299,8 @@ export default function MobileMuan () {
                 I18N['detail.muan.7.intro6']
             ],
             mapImage: '/mobile/detail/muan-map.png',
-            mapAddr: I18N['detail.muan.7.mapaddr'],
-            mapCoord: { right: 180, top: 392 }
+            mapAddr: I18N['detail.muan.7.mapaddr.mobile'],
+            mapCoord: { right: 180, top: isEn ? 377 : 392 }
         },
     }
 

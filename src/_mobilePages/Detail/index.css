@@ -24,6 +24,7 @@
 .mobile-detail .section1 .content .desc{
     font-size: 14px;
     line-height: 24px;
+    white-space: pre-wrap;
 }
 
 
@@ -40,6 +41,7 @@
 }
 .mobile-detail .section2 .intro{
     min-height: 24px;
+    white-space: pre-wrap;
 }
 
 .mobile-detail .section2 .vscroll-imgs{
@@ -95,8 +97,8 @@
 }
 .mobile-detail .section3 .content .intro{
     min-height: 24px;
+    white-space: pre-wrap;
 }
-
 
 .mobile-detail .section4 {
     color: black;
@@ -170,7 +172,9 @@
     line-height: 32px;
 }
 .mobile-detail .section5 .intros .intro{
+    min-height: 24px;
     line-height: 24px;
+    white-space: pre-wrap;
 }
 
 .mobile-detail .section5 .vscroll-imgs{
@@ -215,14 +219,14 @@
 }
 
 .mobile-detail .section7 .contact{
-    padding: 0 24px 0 44px;
+    padding: 0 24px;
     font-size: 14px;
     line-height: 24px;
 }
 .mobile-detail .section7 .contact .address{
     display: flex;
     align-items: flex-start;
-    margin-left: -20px;
+    /* margin-left: -20px; */
     white-space: pre-wrap;
 }
 .mobile-detail .section7 .contact .address .icon{
@@ -232,7 +236,8 @@
 }
 .mobile-detail .section7 .map{
     position: relative;
-    margin-top: -300px;
+    width: 375px;
+    margin: -300px auto 0;
 }
 .mobile-detail .section7 .map img{
     object-fit: cover;

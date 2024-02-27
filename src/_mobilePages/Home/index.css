@@ -49,9 +49,9 @@
     flex-direction: row;
 }
 
-
 .mobile-home .section2 .content>div {
     width: 18px;
+    padding: 0 1px;
     display: flex;
     flex-direction: column;
     gap: 18px;

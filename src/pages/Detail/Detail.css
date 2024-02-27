@@ -250,12 +250,12 @@
     
 }
 .detail .section5 .content {
-    width: 27%;
     flex-shrink: 0;
     display: flex;
     align-items: center;
     padding-left: 130px;
     margin-top: 20px;
+    margin-right: 80px;
     opacity: .1;
     transform: translateX(-20px);
     transition: transform .6s ease-in-out 1.5s, opacity .6s ease-in-out 1.5s;
@@ -267,7 +267,7 @@
 }
 
 .detail .section5 .content .wrap{
-    width: 240px;
+    width: 300px;
 }
 .detail .section5 .content .caption {
     font-size: 22px;
@@ -283,7 +283,7 @@
     transition: width 2s ease-out 2s, opacity 2s ease-out 2s;
 }
 .detail .section5 .content .line.animate{
-    width: 240px;
+    width: 300px;
     opacity: 1;
 }
 
@@ -291,7 +291,6 @@
     font-size: 14px;
     line-height: 24px;
     margin-bottom: 28px;
-    white-space: nowrap;
 }
 .detail .section5 .content .intro .intro-desc{
     font-family: inherit;
@@ -344,6 +343,8 @@
 }
 
 .detail .section7 .content {
+    position: relative;
+    z-index: 2;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -365,20 +366,22 @@
     position: relative;
     z-index: 2;
     margin-left: 200px;
+    width: 400px;
+}
+.detail .section7 .content .left *{
+    white-space: nowrap;
 }
 
 .detail .section7 .content .contact{
     margin-bottom: 175px;
     font-size: 14px;
     line-height: 24px;
-    padding-left: 22px;
     height: auto;
 }
 
 .detail .section7 .content .address{
     display: flex;
     align-items: center;
-    margin-left: -22px;
 }
 
 .detail .section7 .content .ico-location{

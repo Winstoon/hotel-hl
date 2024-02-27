@@ -133,8 +133,8 @@ export default function Muan () {
         section7: {
             contact: {
                 address: I18N['detail.muan.7.address'],
-                phonenumber: '+81 075 741 8815',
-                email: 'info@ishibekojimuan.com'
+                phonenumber: I18N['detail.muan.7.tel'],
+                email: I18N['detail.muan.7.email']
             },
             intros: [
                 I18N['detail.muan.7.intro1'],

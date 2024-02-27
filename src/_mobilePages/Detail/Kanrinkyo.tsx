@@ -141,7 +141,6 @@ function Section7 ({ls, data}: {ls: ILetterSpacing, data: any}) {
             </div>
             <div className="contact" style={{ width: 314 }}>
                 <div className="address" style={{ letterSpacing: ls.TXT }}>
-                    <Image className="icon" src="/icons/location.png" />
                     {contact.address}
                 </div>
                 <div style={{ letterSpacing: ls.TXT }}>{contact.phonenumber}</div>
@@ -162,7 +161,7 @@ export default function MobileKanrinkyo () {
     const data = {
         section1: {
             title: I18N['kanrinkyo.title'],
-            desc1: I18N['kanrinkyo.desc1'],
+            desc1: I18N['kanrinkyo.desc1.mobile'],
             desc2: I18N['kanrinkyo.desc2'],
             src: '/mobile/detail/kanrinkyo-1.jpg'
         },
@@ -269,9 +268,9 @@ export default function MobileKanrinkyo () {
         section6 : null,
         section7: {
             contact: {
-                address: I18N['detail.kanrinkyo.7.addresswrap'],
-                phonenumber: '+81 136 55 8917',
-                email: 'info@ryowhagroup.com'
+                address: I18N['detail.kanrinkyo.7.address'],
+                phonenumber: I18N['detail.kanrinkyo.7.tel'],
+                email: I18N['detail.kanrinkyo.7.email']
             },
             intros: [
                 I18N['detail.kanrinkyo.7.intro1'],

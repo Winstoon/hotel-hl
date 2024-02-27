@@ -184,22 +184,22 @@ export default function MobileHome () {
                 {
                     path: '/mobile/muan',
                     src: '/mobile/home/home-1-1.jpg', title: I18N['muan.title'],
-                    descs: [I18N['muan.desc1'], I18N['muan.desc2']],
+                    descs: [I18N['muan.desc1'], I18N['muan.desc2.mobile']],
                 },
                 {
                     path: '/mobile/arcadia',
                     src: '/mobile/home/home-1-2.jpg', title: I18N['arcadia.title'],
-                    descs: [I18N['arcadia.desc1'], I18N['arcadia.desc2']],
+                    descs: [I18N['arcadia.desc1.mobile'], I18N['arcadia.desc2']],
                 },
                 {
                     path: '/mobile/kanrinkyo',
                     src: '/mobile/home/home-1-3.jpg', title: I18N['kanrinkyo.title'],
-                    descs: [I18N['kanrinkyo.desc1'], I18N['kanrinkyo.desc2']],
+                    descs: [I18N['kanrinkyo.desc1.mobile'], I18N['kanrinkyo.desc2']],
                 },
                 {
                     path: '/mobile/yukoro',
                     src: '/mobile/home/home-1-4.jpg', title: I18N['yukoro.title'],
-                    descs: [I18N['yukoro.desc1'], I18N['yukoro.desc2']],
+                    descs: [I18N['yukoro.desc1.mobile'], I18N['yukoro.desc2']],
                 },
                 {
                     path: '/mobile/newland',

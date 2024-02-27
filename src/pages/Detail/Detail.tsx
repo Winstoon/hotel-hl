@@ -139,7 +139,7 @@ function Slide5 ({ ls, data, order }: { ls: ILetterSpacing, data: any, order: nu
                             { intro.title ? <div className="intro-tit" style={{ letterSpacing: ls.TXT }}>{intro.title}</div> : null }
                             { intro.descs.map((desc: string, index: number) =>
                                 desc ?
-                                    <pre className="intro-desc" key={`d-${index}`} style={{ letterSpacing: ls.TXT }}>{desc}</pre> :
+                                    <div className="intro-desc" key={`d-${index}`} style={{ letterSpacing: ls.TXT }}>{desc}</div> :
                                     <div style={{height: 24}}></div>
                             )}
                         </div>
@@ -209,7 +209,6 @@ function Slide7 ({ ls, data, order }: { ls: ILetterSpacing, data: any, order: nu
                 <div className="left">
                     <div className="contact">
                         <div className="address">
-                            <Image className="ico-location" src="/icons/location.png" />
                             {address}
                         </div>
                         <div className="phonenumber">{phonenumber}</div>

@@ -144,7 +144,6 @@ function Section7 ({ls, data}: {ls: ILetterSpacing, data: any}) {
             </div>
             <div className="contact" style={{ width: 314 }}>
                 <div className="address" style={{ letterSpacing: ls.TXT }}>
-                    <Image className="icon" src="/icons/location.png" />
                     {contact.address}
                 </div>
                 <div style={{ letterSpacing: ls.TXT }}>{contact.phonenumber}</div>
@@ -165,14 +164,14 @@ export default function MobileYukoro () {
     const data = {
         section1: {
             title: I18N['yukoro.title'],
-            desc1: I18N['yukoro.desc1'],
+            desc1: I18N['yukoro.desc1.mobile'],
             desc2: I18N['yukoro.desc2'],
             src: '/mobile/detail/yukoro-1.jpg'
         },
         section2: {
             intros: [
                 I18N['detail.yukoro.2.intro1'],
-                I18N['detail.yukoro.2.intro2'],
+                I18N['detail.yukoro.2.intro2.mobile'],
                 I18N['detail.yukoro.2.intro3'],
                 '',
                 I18N['detail.yukoro.2.intro4'],
@@ -260,8 +259,8 @@ export default function MobileYukoro () {
         section7: {
             contact: {
                 address: I18N['detail.yukoro.7.address'],
-                phonenumber: '+81 136 55 8917',
-                email: 'info@ryowhagroup.com'
+                phonenumber: I18N['detail.yukoro.7.tel'],
+                email: I18N['detail.yukoro.7.email']
             },
             intros: [
                 I18N['detail.yukoro.7.intro1'],

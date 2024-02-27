@@ -166,7 +166,7 @@ function Section7 ({ls, data}: {ls: ILetterSpacing, data: any}) {
     const { contact, intros, mapImage, mapAddr, mapCoord } = data
     return (
         <div className="section7" style={{ background: '#212020' }}>
-            <div className="intros" style={{ marginBottom: 30, opacity: 1 }}>
+            <div className="intros" style={{ marginBottom: 30, opacity: .7 }}>
                 { intros.map((intro: string, idx: number) =>
                     <div
                         key={idx}
@@ -175,9 +175,8 @@ function Section7 ({ls, data}: {ls: ILetterSpacing, data: any}) {
                     >{intro}</div>
                 )}
             </div>
-            <div className="contact" style={{ position: 'relative', zIndex: 2, opacity: .7 }}>
+            <div className="contact" style={{ position: 'relative', zIndex: 2, opacity: 1 }}>
                 <div className="address" style={{ letterSpacing: ls.TXT }}>
-                    <Image className="icon" src="/icons/location.png" />
                     {contact.address}
                 </div>
                 <div style={{ letterSpacing: ls.TXT }}>{contact.phonenumber}</div>
@@ -194,11 +193,12 @@ function Section7 ({ls, data}: {ls: ILetterSpacing, data: any}) {
 export default function MobileArcadia () {
     const I18N = useCommonStore(state => state.I18N)
     const ls = useCommonStore(state => state.letterSpacing)
+    const lang = useCommonStore(state => state.lang)
 
     const data = {
         section1: {
             title: I18N['arcadia.title'],
-            desc1: I18N['arcadia.desc1'],
+            desc1: I18N['arcadia.desc1.mobile'],
             desc2: I18N['arcadia.desc2'],
             src: '/mobile/detail/arcadia-1.jpg',
             // gotoLink: 'https://www.instagram.com/arcadiaryowhajapan/?igshid=NTc4MTIwNjQ2YQ==',
@@ -332,8 +332,8 @@ export default function MobileArcadia () {
         section7: {
             contact: {
                 address: I18N['detail.arcadia.7.address'],
-                phonenumber: '+81 0136 55 7559',
-                email: 'info.arcadia@ryowhagroup.com'
+                phonenumber: I18N['detail.arcadia.7.tel'],
+                email: I18N['detail.arcadia.7.email']
             },
             intros: [
                 I18N['detail.arcadia.7.intro1'],
@@ -358,7 +358,7 @@ export default function MobileArcadia () {
             <Section5 ls={ls} data={data.section5} />
             <Section6 ls={ls} data={data.section6} />
             <Section7 ls={ls} data={data.section7} />
-            <Footer to="http://nisekoarcadia.co.jp/?order=true" />
+            <Footer to={`http://nisekoarcadia.co.jp/?order=true&lang=${lang}`} />
         </div>
     )
 }

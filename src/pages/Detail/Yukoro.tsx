@@ -104,8 +104,8 @@ export default function Yukoro () {
         section7: {
             contact: {
                 address: I18N['detail.yukoro.7.address'],
-                phonenumber: '+81 136 55 8917',
-                email: 'info@ryowhagroup.com'
+                phonenumber: I18N['detail.yukoro.7.tel'],
+                email: I18N['detail.yukoro.7.email']
             },
             intros: [
                 I18N['detail.yukoro.7.intro1'],
