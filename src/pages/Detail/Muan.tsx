@@ -144,6 +144,7 @@ export default function Muan () {
                 I18N['detail.muan.7.intro5'],
                 I18N['detail.muan.7.intro6']
             ],
+            mapAbs: 2,
             mapImage: '/detail/muan-map.png',
             mapAddr: I18N['detail.muan.7.mapaddr'],
             mapCoord: { x: 580, y: 532 }

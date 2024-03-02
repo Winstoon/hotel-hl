@@ -43,18 +43,20 @@
     align-items: center;
     justify-content: center;
 }
+
+.mobile-home .section2 .content > div {
+    display: flex;
+    gap: 18px;
+    writing-mode: vertical-rl;
+    letter-spacing: 8px;
+}
+
 .mobile-home .section2 .content.en > div{
     width: auto;
     display: flex;
     flex-direction: row;
-}
-
-.mobile-home .section2 .content>div {
-    width: 18px;
-    padding: 0 1px;
-    display: flex;
-    flex-direction: column;
-    gap: 18px;
+    writing-mode: initial;
+    letter-spacing: 1.5px;
 }
 
 .mobile-home .section3 .content {

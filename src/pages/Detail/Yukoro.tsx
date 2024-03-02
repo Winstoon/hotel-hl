@@ -116,6 +116,7 @@ export default function Yukoro () {
             ],
 
             // same addr with Arcadia
+            mapAbs: 2,
             mapImage: '/detail/yukoro-map.png',
             mapAddr: I18N['detail.arcadia.7.mapaddr'],
             mapCoord: { x: 635, y: 240 }

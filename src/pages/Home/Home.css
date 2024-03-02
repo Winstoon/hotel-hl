@@ -192,9 +192,9 @@
 }
 
 .h2-intros > div{
-    width: 16px;
+    writing-mode: vertical-rl;
     font-size: 16px;
-    line-height: 24px;
+    letter-spacing: 8px;
     margin-right: 20px;
 }
 
@@ -203,6 +203,8 @@
     font-size: 16px;
     line-height: 40px;
     margin-right: 0;
+    letter-spacing: 1.5px;
+    writing-mode: initial;
 }
 
 .h2-intros > div:last-child{
@@ -212,6 +214,7 @@
 .h2-intros > div > span{
     display: inline-block;
     margin-bottom: 20px;
+    writing-mode: vertical-rl;
 }
 .h2-intros > div > span:last-child{
     margin-bottom: 0;
@@ -219,6 +222,7 @@
 
 .h2-intros.en > div > span{
     margin-bottom: 0;
+    writing-mode: initial;
 }
 
 .h3-pagination{

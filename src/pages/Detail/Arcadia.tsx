@@ -151,7 +151,7 @@ export default function Arcadia () {
                 I18N['detail.arcadia.7.intro3'],
                 I18N['detail.arcadia.7.intro4']
             ],
-            mapAbs: true,
+            mapAbs: 1,
             mapImage: '/detail/arcadia-map.png'
         },
 

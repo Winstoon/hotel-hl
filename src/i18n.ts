@@ -683,12 +683,12 @@ export const I18NS: I18NFullData = {
     },
     'detail.arcadia.3.intro1': {
         [I18N.ZH]: '意大利建筑巨匠',
-        [I18N.EN]: 'Designed by the Italian master architect,',
+        [I18N.EN]: 'Designed by the Italian master architect',
         [I18N.JP]: 'イタリア人の建築巨匠',
     },
     'detail.arcadia.3.intro2': {
         [I18N.ZH]: 'RICCARDO RUBELLIA 倾心之作',
-        [I18N.EN]: 'Riccardo Rubellia,',
+        [I18N.EN]: 'Riccardo Rubellia',
         [I18N.JP]: 'RICCARDO RUBELLIA が手掛けた傑作',
     },
     'detail.arcadia.3.intro3': {
@@ -798,7 +798,7 @@ export const I18NS: I18NFullData = {
     },
     'detail.arcadia.5.intro1.desc3': {
         [I18N.ZH]: '全屋地暖 双通道壁炉',
-        [I18N.EN]: 'Full underfloor heating. Double-sided Fireplace',
+        [I18N.EN]: 'Full underfloor heating\nDouble-sided Fireplace',
         [I18N.JP]: '全館床暖房と二重通路の暖炉が完備され'
     },
     'detail.arcadia.5.intro1.desc4': {
@@ -813,22 +813,22 @@ export const I18NS: I18NFullData = {
     },
     'detail.arcadia.5.intro2.desc1': {
         [I18N.ZH]: '专业级酒窖 窖藏名酒佳酿',
-        [I18N.EN]: 'Pro cellar space. With a collection of fine spirits',
+        [I18N.EN]: 'Pro cellar space\nWith a collection of fine spirits',
         [I18N.JP]: '高級ワイン用のポロワインセラーをご用意'
     },
     'detail.arcadia.5.intro2.desc2': {
         [I18N.ZH]: '温泉SPA房 开启舒缓之境',
-        [I18N.EN]: 'Hot spring SPA. A paradise of relaxation',
+        [I18N.EN]: 'Hot spring SPA\nA paradise of relaxation',
         [I18N.JP]: '心身を解きほぐす心地よい温泉·スパルーム'
     },
     'detail.arcadia.5.intro2.desc3': {
         [I18N.ZH]: '雪具干燥室 纵享滑雪之旅',
-        [I18N.EN]: 'Ski Drying Room. For your ultimate skiing experience',
+        [I18N.EN]: 'Ski Drying Room\nFor your ultimate skiing experience',
         [I18N.JP]: 'スキー乾燥室でスキー旅をお手伝いします'
     },
     'detail.arcadia.5.intro2.desc4': {
         [I18N.ZH]: '私享健身房 时刻关注体调',
-        [I18N.EN]: 'Fitness Room. Tracking your health all the time',
+        [I18N.EN]: 'Fitness Room\nTracking your health all the time',
         [I18N.JP]: 'プライベートジムでいつでも体調を整えます'
     },
     // 'detail.arcadia.5.intro3.title': {
@@ -1080,27 +1080,27 @@ export const I18NS: I18NFullData = {
     },
     'detail.kanrinkyo.5.intro2.desc1': {
         [I18N.ZH]: '户外按摩浴缸 体味合一境界',
-        [I18N.EN]: 'Outdoor jacuzzi. Your body and nature come to one',
+        [I18N.EN]: 'Outdoor jacuzzi\nYour body and nature come to one',
         [I18N.JP]: '屋外ジャグジーバスで体のととのうを体感',
     },
     'detail.kanrinkyo.5.intro2.desc2': {
         [I18N.ZH]: '温泉SPA房 开启舒缓之境',
-        [I18N.EN]: 'Hot spring SPA. A paradise of relaxation',
+        [I18N.EN]: 'Hot spring SPA\nA paradise of relaxation',
         [I18N.JP]: '心身を解きほぐす心地よい温泉・スパルーム',
     },
     'detail.kanrinkyo.5.intro2.desc3': {
         [I18N.ZH]: '专属25米超大泳池 时刻关注体调',
-        [I18N.EN]: 'Exclusive 25 meters long swimming pool. Tracking your health all the time',
+        [I18N.EN]: 'Exclusive 25 meters long swimming pool\nTracking your health all the time',
         [I18N.JP]: '専用25メートルプールでいつでも体調を整えます',
     },
     'detail.kanrinkyo.5.intro2.desc4': {
         [I18N.ZH]: '专业级酒窖 窖藏名酒佳酿',
-        [I18N.EN]: 'Pro cellar space. With a collection of fine spirits',
+        [I18N.EN]: 'Pro cellar space\nWith a collection of fine spirits',
         [I18N.JP]: '高級ワイン用のプロ級ワインセラーをご用意',
     },
     'detail.kanrinkyo.5.intro2.desc5': {
         [I18N.ZH]: '雪具干燥室 纵享滑雪之旅',
-        [I18N.EN]: 'Ski Drying Room. For your ultimate skiing experience',
+        [I18N.EN]: 'Ski Drying Room\nFor your ultimate skiing experience',
         [I18N.JP]: 'スキー乾燥室でスキー旅をお手伝いします',
     },
 
@@ -1347,9 +1347,9 @@ export const I18NS: I18NFullData = {
     
     // Yukoro P6
     'detail.yukoro.7.address': {
-        [I18N.ZH]: '〒044-0089 日本国北海道虻田郡倶知安町二世谷比罗夫镇2条1丁目163-53, 163-61, 163-158',
-        [I18N.EN]: '163-53, 163-61, 163-158, 1-chome, 2-jo, Nisekohirafu, Kutchan-cho, Abuta-gun, Hokkaido 044-0089 Japan',
-        [I18N.JP]: '〒044-0089 北海道虻田郡倶知安町ニセコひらふ2条1丁目163-53, 163-61, 163-158'
+        [I18N.ZH]: '地址：〒044-0089 日本国北海道虻田郡倶知安町二世谷比罗夫镇2条1丁目163-53, 163-61, 163-158',
+        [I18N.EN]: 'Add: 163-53, 163-61, 163-158, 1-chome, 2-jo, Nisekohirafu, Kutchan-cho, Abuta-gun, Hokkaido 044-0089 Japan',
+        [I18N.JP]: '住所: 〒044-0089 北海道虻田郡倶知安町ニセコひらふ2条1丁目163-53, 163-61, 163-158'
     },
     'detail.yukoro.7.tel': {
         [I18N.ZH]: '电话：+81 136 55 8917',

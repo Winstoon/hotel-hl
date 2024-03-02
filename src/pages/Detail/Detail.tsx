@@ -221,7 +221,7 @@ function Slide7 ({ ls, data, order }: { ls: ILetterSpacing, data: any, order: nu
                     </div>
                 </div>
 
-                { mapAbs ?
+                { mapAbs === 1 ?
                     null :
                     <div className="mapbox">
                         <Image className="map-img" src={mapImage} />
@@ -234,7 +234,7 @@ function Slide7 ({ ls, data, order }: { ls: ILetterSpacing, data: any, order: nu
                 }
             </div>
             {
-                mapAbs ? <div className="mapboxabs">
+                mapAbs === 1 ? <div className="mapboxabs">
                     <Image className="map-img" src={mapImage} />
                 </div> : null
             }

@@ -128,7 +128,7 @@ export default function Kanrinkyo () {
                 I18N['detail.kanrinkyo.7.intro4'],
                 // I18N['detail.kanrinkyo.7.intro5']
             ],
-
+            mapAbs: 2,
             mapImage: '/detail/kanrinkyo-map.png',
             mapAddr: I18N['detail.arcadia.7.mapaddr'],
             mapCoord: { x: 635, y: 240 }
