@@ -295,6 +295,7 @@
 .detail .section5 .content .intro .intro-desc{
     font-family: inherit;
     margin: 0;
+    white-space: pre-wrap;
 }
 
 .detail .section5 .content .intro:last-child{
