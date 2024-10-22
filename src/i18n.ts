@@ -886,14 +886,14 @@ export const I18NS: I18NFullData = {
         [I18N.JP]: '住所: 〒044-0089 北海道虻田郡倶知安町ニセコひらふ2条2丁目7番地18号'
     },
     'detail.arcadia.7.tel': {
-        [I18N.ZH]: '电话：+81 0136 55 7559',
-        [I18N.EN]: 'Tel: +81 0136 55 7559',
-        [I18N.JP]: '電話: +81 0136 55 7559'
+        [I18N.ZH]: '电话：+81 136 55 8917',
+        [I18N.EN]: 'Tel: +81 136 55 8917',
+        [I18N.JP]: '電話: +81 136 55 8917'
     },
     'detail.arcadia.7.email': {
-        [I18N.ZH]: '邮箱：info.arcadia@ryowhagroup.com',
-        [I18N.EN]: 'E-mail: info.arcadia@ryowhagroup.com',
-        [I18N.JP]: '電子メール: info.arcadia@ryowhagroup.com'
+        [I18N.ZH]: '邮箱：info@ryowhagroup.com',
+        [I18N.EN]: 'E-mail: info@ryowhagroup.com',
+        [I18N.JP]: '電子メール: info@ryowhagroup.com'
     },
     'detail.arcadia.7.intro1': {
         [I18N.ZH]: 'ARCADIA 位于北海道二世谷地区最富盛名的比罗夫镇',
