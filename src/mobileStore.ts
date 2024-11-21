@@ -22,14 +22,14 @@ type CommonActions = {
 const getDefaultI18NData = () => {
     let result: I18NData = {}
     Object.entries(I18NS).forEach(([key, value]) => {
-        const str = value[I18N.ZH]
+        const str = value[I18N.EN]
         result[key] = str
     })
     return result
 }
 
 export const useCommonStore = create(immer<CommonState & CommonActions>((set, get) => ({
-    lang: I18N.ZH,
+    lang: I18N.EN,
     I18N: getDefaultI18NData(),
     letterSpacing: LetterSpacingMap,
     wechatDialogVisible: false,
